@@ -20,7 +20,7 @@ $ sass --version
 
 Una vez que lo hemos instalado vamos a crear nuestro primer archivo test.scss con el siguiente código para compilarlo a .css
 
-{% highlight sass %}
+{% highlight scss %}
 body {
   background: white;
   margin: 0 auto;
