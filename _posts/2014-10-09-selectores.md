@@ -97,7 +97,7 @@ body {
 ##Parent Selector
 
 Hacemos referencia al selector padre utilizando el _ampersand_ `&`. Esto es una herramienta muy poderosa si lo utilizamos
-correctamente, te permite escribir menos código, mantener tus estilos muy
+correctamente, te permite escribir menos código, tener tus estilos muy
 legibles y fáciles de mantener.
 
 Como ejemplo vamos a dar estilos a una navegación escrita con la
