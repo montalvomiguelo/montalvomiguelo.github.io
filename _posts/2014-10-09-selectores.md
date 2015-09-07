@@ -48,7 +48,7 @@ body {
 
 ##Selectores anidados
 
-Como ya habrás notado estamos repitiendo código el cual es más difícil de leer  y mantener. Sass nos permite arreglar eso con selectores anidados veamos como funciona. Creamos un archivo llamado main.scss y escribimos el siguiente código:
+Como ya habrás notado estamos repitiendo código el cual es más difícil de leer  y mantener. Sass nos permite arreglar eso con selectores anidados, veamos como funciona. Creamos un archivo llamado main.scss y escribimos el siguiente código:
 
 {% highlight scss %}
 body

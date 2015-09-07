@@ -34,7 +34,7 @@ Ejecutamos en la terminal:
 $ sass test.scss
 {% endhighlight %}
 
-Y tendremos nos arrojara el siguiente css:
+Y nos arrojara el siguiente css:
 
 {% highlight css %}
 body {
