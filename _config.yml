@@ -10,3 +10,19 @@ github_username:  montalvomiguelo
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Front Matter defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Montalvo Miguelo
+      layout: "post"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "pages"
