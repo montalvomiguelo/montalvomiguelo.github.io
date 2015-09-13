@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Introducción a SASS"
 date:   2014-10-01 20:30
 categories: frontend

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Selectores"
 date:   2014-10-09 22:04:11
 categories: frontend
