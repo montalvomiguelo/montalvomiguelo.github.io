@@ -1,6 +1,5 @@
 ---
 title:  "Variables en SASS"
-date:   2015-09-04 18:04:11
 categories: frontend
 ---
 En Sass las variables comienzan con el signo de dollar. Nos
