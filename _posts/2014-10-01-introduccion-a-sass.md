@@ -1,5 +1,5 @@
 ---
-title:  "Introducción a SASS"
+title:  "Introducción a Sass"
 date:   2014-10-01 20:30
 categories: frontend
 ---
