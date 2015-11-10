@@ -74,10 +74,9 @@ function my_widget($atts, $content = null) {
 		</a>
 		<h2>$title</h2>
 		<p>$body</p>
-		<a href="$url" class="more-link">Read More</a>
+		<a href="$link" class="more-link">Read More</a>
 	</div>
 </div>
-<!-- END "div.home_widget" -->
 EOT;
 }
 add_shortcode("widget", "my_widget");
