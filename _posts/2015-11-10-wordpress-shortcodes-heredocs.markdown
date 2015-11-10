@@ -1,5 +1,5 @@
 ---
-title:  "WordPress y Shortdoces bonitos con Heredocs"
+title:  "WordPress y Shortcodes bonitos con Heredocs"
 date:   2015-11-10 13:30
 categories: php wordpress
 ---
