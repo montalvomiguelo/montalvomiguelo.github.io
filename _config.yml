@@ -10,6 +10,8 @@ github_username:  montalvomiguelo
 # Build settings
 markdown: kramdown
 permalink: pretty
+sass:
+    style: compressed
 
 # Front Matter defaults
 defaults:
