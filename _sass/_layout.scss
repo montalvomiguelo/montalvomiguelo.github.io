@@ -33,7 +33,7 @@
   .page-link {
     color: $text-color;
     display: inline-block;
-    line-height: 70px;
+    line-height: $base-line-height;
 
     &:hover,
     &:focus {
