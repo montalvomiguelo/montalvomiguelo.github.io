@@ -1,6 +1,7 @@
 # Site settings
 title: Montalvo Miguelo
 email: me@montalvomiguelo.com
+tagline: Front-end web developer and musician
 description: Independent front-end developer and musician from México. I work for small businesses, start-ups, individuals, and web/design agencies.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://montalvomiguelo.com" # the base hostname & protocol for your site
