@@ -21,9 +21,8 @@
   a {
     color: $grey-color-dark;
 
-    &:hover,
-    &:focus {
-      color: $grey-color;
+    &:visited {
+      color: $grey-color-dark;
     }
   }
 }
