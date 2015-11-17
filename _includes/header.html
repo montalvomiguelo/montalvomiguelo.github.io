@@ -1,14 +1,14 @@
-<header class="site-header">
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
 
   <div class="wrapper">
 
     {% if page.title %}
-      <p class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></p>
+      <p class="site-title" itemprop="headline"><a href="{{ site.baseurl }}/">{{ site.title }}</a></p>
     {% else %}
-      <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <h1 class="site-title" itemprop="headline"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
     {% endif %}
 
-    <nav class="site-nav">
+    <nav class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <a class="site-logo" href="{{ site.baseurl }}/">
         <span class="icon icon-montalvomiguelo">
           <svg viewBox="291.686 -138.9 93.857 78">
