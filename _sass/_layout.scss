@@ -18,9 +18,13 @@
   margin-bottom: 18px;
   margin-top: 36px;
 
-  &,
-  &:visited {
+  a {
     color: $grey-color-dark;
+
+    &:hover,
+    &:focus {
+      color: $grey-color;
+    }
   }
 }
 
@@ -56,9 +60,21 @@
     top: -15px;
     z-index: 1;
 
+    &:hover {
+      svg {
+        path {
+          fill: $brand-color;
+        }
+      }
+    }
+
     svg {
       width: 30px;
       height: 30px;
+
+      path {
+        @include prefixer(transition, all .3s ease, webkit moz ms spec);
+      }
     }
   }
 

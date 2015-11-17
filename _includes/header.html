@@ -2,7 +2,11 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    {% if page.title %}
+      <p class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></p>
+    {% else %}
+      <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    {% endif %}
 
     <nav class="site-nav">
       <a class="site-logo" href="{{ site.baseurl }}/">
