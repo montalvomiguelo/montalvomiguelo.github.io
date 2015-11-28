@@ -83,7 +83,7 @@ echo apply_filters( 'rocks_filter', 'Pepito' );
 
 Si no existe el filtro aún, el valor que se imprime es simplemente __Pepito__.
 Si lo dejamos así quiere decir que le estamos dando la oportunidad a otros
-desarrolladores de implementar su propio filtro con `add_action()` para modificar
+desarrolladores de implementar su propio filtro con `add_filter()` para modificar
 este valor.
 
 {% highlight php %}
