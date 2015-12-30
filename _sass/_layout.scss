@@ -162,6 +162,7 @@
 
 .page-heading {
   font-size: 20px;
+  letter-spacing: -.5px;
 }
 
 .post-list {
@@ -170,6 +171,10 @@
 
   > li {
     margin-bottom: $spacing-unit;
+
+    h2 {
+      letter-spacing: -.5px;
+    }
   }
 }
 
