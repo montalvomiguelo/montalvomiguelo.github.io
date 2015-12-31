@@ -14,7 +14,7 @@
   font-family: $font-family-monospace;
   font-size: 26px;
   font-weight: $headings-font-weight;
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
   margin-bottom: 18px;
   margin-top: 36px;
 
@@ -86,7 +86,7 @@
  * Site footer
  */
 .site-footer {
-  background: darken($background-color, 2.5%);
+  background: #f7f7f9;
   // border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 }
@@ -162,7 +162,7 @@
 
 .page-heading {
   font-size: 20px;
-  letter-spacing: -.5px;
+  // letter-spacing: -.5px;
 }
 
 .post-list {
@@ -173,7 +173,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-      letter-spacing: -.5px;
+      // letter-spacing: -.5px;
     }
   }
 }
