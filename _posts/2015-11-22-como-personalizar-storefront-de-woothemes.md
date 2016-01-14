@@ -144,7 +144,7 @@ function sf_child_theme_google_fonts() {
 add_action( 'wp_enqueue_scripts', 'sf_child_theme_google_fonts' );
 {% endhighlight %}
 
-La functión `sf_child_theme_google_fonts()` se dispara en el Action Hook
+La función `sf_child_theme_google_fonts()` se dispara en el Action Hook
 `wp_enqueue_scripts` para cargar la hoja de estilos de Google Fonts.
 
 Después agregamos al final del archivo __assets/sass/style.scss__ los siguientes estilos:
@@ -264,7 +264,7 @@ Searching 114 files for "apply_filters( 'storefront_default_header_background_co
 En la línea __132__ del archivo __/wp-content/themes/storefront/inc/customizer/controls.php__
 verás que nos dejaron un: `apply_filters( 'storefront_default_header_background_color', '#2c2d33' ),`
 
-Esto quiere decir el color de fondo en el header va ser `#2c2d33` por defecto, al
+Esto quiere decir que el color de fondo en el header va ser `#2c2d33` por defecto, al
 menos de que nosotros lo modifiquemos agregando un filtro llamado
 `storefront_default_header_background_color`.
 
