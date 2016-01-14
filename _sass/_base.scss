@@ -80,11 +80,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-monospace;
   font-weight: $headings-font-weight;
   line-height: 1.1;
-  // letter-spacing: -1px;
-}
-
-h4, h5, h6 {
-  // letter-spacing: -.5px;
 }
 
 
@@ -115,7 +110,6 @@ blockquote {
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   font-size: 18px;
-  // letter-spacing: -1px;
   font-style: italic;
 
   > :last-child {
