@@ -7,7 +7,7 @@ Son un término genérico para referirnos a un evento que sucede en WordPress
 donde nosotros podemos agregar nuestro propio código o modificar lo que WordPress
 hace por defecto. Existen dos tipos de Hooks en WordPress, _Actions_ y _Filters_.
 
-##Actions
+## Actions
 
 Es un Hook que se dispara en un punto determinado durante la ejecución
 de WordPress y nos permite hacer algo en ese momento.
