@@ -17,7 +17,7 @@ para cargar los estilos y scripts de nuestro sitio.
 
 [Listado de los Action Hooks nativos de WordPress.][action-hooks]
 
-##Filters
+## Filters
 
 Es un Hook que nos permite manipular y __siempre retornar un valor__.
 
@@ -26,7 +26,7 @@ de un post lo hacemos con el filtro `excerpt_length`.
 
 [Listado de los Filter Hooks nativos de WordPress.][filter-hooks]
 
-##Funciones para Filter Hooks
+## Funciones para Filter Hooks
 
 ### [add_filter()][add-filter]
 {% highlight php %}
@@ -117,7 +117,7 @@ Quita una función que está atada a un Filter Hook:
 remove_filter( 'the_content', 'do_shortcode', 11);
 {% endhighlight %}
 
-##Funciones para Action Hooks
+## Funciones para Action Hooks
 
 ### [add_action()][add-action]
 

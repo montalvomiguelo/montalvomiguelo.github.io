@@ -46,7 +46,7 @@ Adicionalmente existen algunas [extensiones de pago para poder personalizar Stor
 Pero realmente podemos hacerlo nosotros mismos utilizando los Hooks que los creadores
 de Storefront dejaron a nuestra disposición.
 
-##Storefront Child Theme
+## Storefront Child Theme
 
 Una de las mejores prácticas para personalizar Storefront es creando un Child Theme
 donde vamos a guardar todas nuestras modificaciones sin afectar al tema original ni
@@ -61,7 +61,7 @@ la apariencia por defecto, colores y la tipografía. Al final de este Post el re
 
 [![Storefront Customizer]({{ site.baseurl }}/assets/storefront-child.jpg)][demo]
 
-##Estructura de archivos de Storefront Child theme
+## Estructura de archivos de Storefront Child theme
 {% highlight bash %}
 ▾ assets/
   ▾ sass/
@@ -72,10 +72,10 @@ la apariencia por defecto, colores y la tipografía. Al final de este Post el re
   style.css*
 {% endhighlight %}
 
-###assets/
+### assets/
 Contiene un directorio de sass donde podemos escribir y organizar nuestros estilos personalizados con Sass.
 
-###functions.php
+### functions.php
 {% highlight php %}
 <?php
 
@@ -99,7 +99,7 @@ Solo tiene una función `sf_child_theme_enqueue_styles()` que se dispara en el
 Action Hoook `wp_enqueue_scripts`. Aquí se cargan los estilos del Parent Theme y
 después los del Child Theme con la función `wp_enqueue_style()`.
 
-###style.css
+### style.css
 {% highlight css %}
 /*
 Theme Name:     Storefront Child Theme
@@ -129,7 +129,7 @@ Images License: GNU General Public License v2 or later
 Esta es la hoja de estilos del Child Theme y está vacía, únicamente tiene los metadatos
 del tema y referencia al Template Storefront (Parent Theme).
 
-##Estilos personalizados y Google Fonts
+## Estilos personalizados y Google Fonts
 En el archivo __functions.php__ agregamos al final las siguientes líneas de código:
 
 {% highlight php %}
@@ -223,7 +223,7 @@ Nota: Tenemos como dependencias en __style.scss__ a [Bourbon][bourbon] (librerí
 Revisa la documentación de estas pues hay varias maneras de instalarlas. Si no quieres utilizar
 Sass, solo copia los [estilos finales del proyecto][style] en tu hoja de estilos __style.css__.
 
-##Filtros para el Customizer
+## Filtros para el Customizer
 Storefront utiliza el [API de WordPress Customizer][customizer-api] para la personalización del tema.
 Empecemos por cambiar el color de fondo para el header que viene por defecto en nuestro Storefront Child Theme.
 
@@ -306,7 +306,7 @@ add_filter( 'storefront_default_accent_color', 'sf_child_theme_color_peter_river
 add_filter( 'storefront_default_footer_link_color', 'sf_child_theme_color_peter_river' );
 {% endhighlight %}
 
-##Personalizando el Layout de Homepage
+## Personalizando el Layout de Homepage
 Creamos un archivo llamado __template-homepage.php__ en nuestro
 Child Theme con el siguiente contenido:
 
@@ -396,7 +396,7 @@ Searching 115 files for "storefront_get_sidebar()"
 El Hook `sf_child_theme_before_homepage_content` es el único nuevo que agregamos nosotros
 para el Child Theme, ahí nosotros debemos indicarle que es lo que va pasar.
 
-##Acciones y Filtros para personalizar Homepage
+## Acciones y Filtros para personalizar Homepage
 Agregamos las siguientes líneas al final de __functions.php__:
 
 {% highlight php %}

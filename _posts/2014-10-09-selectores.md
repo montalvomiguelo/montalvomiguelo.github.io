@@ -45,7 +45,7 @@ body {
 }
 {% endhighlight %}
 
-##Selectores anidados
+## Selectores anidados
 
 Como ya habrás notado estamos repitiendo código el cual es más difícil de leer  y mantener. Sass nos permite arreglar eso con selectores anidados, veamos como funciona. Creamos un archivo llamado main.scss y escribimos el siguiente código:
 
@@ -93,7 +93,7 @@ body {
   font-size: 12px; }
 {% endhighlight %}
 
-##Parent Selector
+## Parent Selector
 
 Hacemos referencia al selector padre utilizando el _ampersand_ `&`. Esto es una herramienta muy poderosa si lo utilizamos
 correctamente, te permite escribir menos código, tener tus estilos muy

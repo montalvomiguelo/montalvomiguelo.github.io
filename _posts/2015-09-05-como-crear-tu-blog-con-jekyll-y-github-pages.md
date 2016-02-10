@@ -12,7 +12,7 @@ compartir contigo cómo fue este proceso desde la instalación de Jekyll, config
 estructura de archivos, cómo funciona y como publicarlo de manera
 gratuita en Github Pages con tu dominio personal.
 
-##¿Qué es Jekyll?
+## ¿Qué es Jekyll?
 > Jekyll is a simple, blog-aware, static site generator.
 
 Jekyll es un generador de sitios estáticos escrito en Ruby. Un generador
@@ -26,7 +26,7 @@ un directorio de archivos de texto.
 Con Jekyll puedes sustituir a WordPress, Joomla o cualquier CMS, cuenta con urls
 amigables, categorías, páginas, posts, templates, etc.
 
-##Ventajas al utilizar un generador de sitios estáticos como Jekyll
+## Ventajas al utilizar un generador de sitios estáticos como Jekyll
 
 * Velocidad: Estamos sirviendo páginas estáticas, no necesitamos hablar
   con una base de datos para pedirle la información en cada request ni
@@ -41,7 +41,7 @@ renderear datos en el servidor.
 * Hosting gratuito: Podemos alojar nuestro sitio de manera gratuita en
   Github Pages.
 
-###¿Quiénes están utilizando Jekyll?
+### ¿Quiénes están utilizando Jekyll?
 
 * [Jekyll][jekyll]
 * [CSS Wizardry][csswizardry]
@@ -49,7 +49,7 @@ renderear datos en el servidor.
 * [Github Pages][github-pages] detrás de escenas utiliza Jekyll para generar los sitios
   estáticos.
 
-##Instalación de Jekyll
+## Instalación de Jekyll
 
 Abrimos la terminal y escribimos el siguiente comando para instalar Jekyll (en la Mac). Si tu tienes otro
 sistema operativo te recomiendo revisar la [documentación de instalación][jekyll-installation].
@@ -58,7 +58,7 @@ sistema operativo te recomiendo revisar la [documentación de instalación][jeky
 $ sudo gem install jekyll
 {% endhighlight %}
 
-##Crear un nuevo proyecto con Jekyll
+## Crear un nuevo proyecto con Jekyll
 
 Escribimos el siguiente comando en la terminal para crear un nuevo proyecto con
 Jekyll:
@@ -108,7 +108,7 @@ tradicional.
 ese archivo aun no veremos nada y esto es porque no le hemos dicho a
 Jekyll que _genere nuestro sitio estático_.
 
-###Generar el sitio estático con Jekyll
+### Generar el sitio estático con Jekyll
 
 Jekyll tienen un servidor de desarrollo para que podamos mirar nuestro
 blog en nuestro equipo local. Para que Jekyll genere y sirva nuestro
@@ -158,7 +158,7 @@ proyecto:
 {% endhighlight %}
 
 
-##Configuración de Jekyll
+## Configuración de Jekyll
 
 Las configuraciones de nuestro proyecto se establecen en el archivo
 `_config.yml`. [YAML][yaml-site] es un formato especial para guardar configuraciones
@@ -206,7 +206,7 @@ propia información:
 
 ![My data]({{ site.baseurl }}/assets/my-data.jpg)
 
-###Configuración de permalinks
+### Configuración de permalinks
 Por defecto los permalinks de Jekyll son algo como:
 
 ```
@@ -296,7 +296,7 @@ por ejemplo el archivo `css/main.scss`
 ...
 {% endhighlight %}
 
-##Crea tu primer post
+## Crea tu primer post
 
 Para que las entradas del blog sean ordenadas correctamente por
 Jekyll, es necesario nombrar los archivos con la siguiente convención:
@@ -343,7 +343,7 @@ enlaces para aprender un poco más sobre el tema:
 * [Markdown][markdown]
 * [Markdown Cheatsheet][markdown-cheatsheet]
 
-##Páginas
+## Páginas
 Tenemos una página de ejemplo que viene con Jekyll:
 
 * `about.md`
@@ -364,7 +364,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatibu
 
 Documentación sobre páginas: [Creating pages][creating-pages]
 
-##Liquid
+## Liquid
 
 Liquid es un lenguaje de plantillas, su trabajo es procesar los datos que
 vienen de nuestro blog y los templates de nuestro tema para generar el
@@ -375,7 +375,7 @@ de temas. Debido a su eficiencia y facilidad de uso,
 este a sido adoptado en otros proyectos como Jekyll, Mixture IO,
 Octopress, entre otros.
 
-###Liquid en acción
+### Liquid en acción
 
 Con Liquid nosotros vamos a tener acceso a los datos del YAML Front Matter
 (title, author, excerpt, etc) e imprimirlos directamente en nuestros
@@ -462,7 +462,7 @@ Te dejo algunos enlaces de interés para aprender un poco más de Liquid:
 
 * [Variables][vars]
 
-###Templates
+### Templates
 
 Los templates de Jekyll están situados en el directorio `_layouts/`
 
@@ -509,7 +509,7 @@ etc, y dentro de el serán incluidos los demás templates en el _tag_
 {% endraw %}
 {% endhighlight %}
 
-##Variables
+## Variables
 
 Hay variables que no necesitamos escribir siempre en cada post que
 hagamos. El _author_ probablemente solamente será en mi caso
@@ -541,7 +541,7 @@ Por cierto este snippet lo tomé de la documentación de Jekyll:
 * [Front Matter defaults][front-matter-defaults]
 
 
-##Borradores (drafts)
+## Borradores (drafts)
 
 Los drafts son útiles cuando estamos escribiendo un post que tal ves no
 queremos que sea publicado porque aún está en proceso. Para trabajar
@@ -562,7 +562,7 @@ $ jekyll serve --drafts
 
 Documentación de drafts: [Working with drafts][drafts]
 
-##Deploy en Githug Pages
+## Deploy en Githug Pages
 
 Con Github Pages podemos publicar de manera gratuita nuestro Blog
 creado con Jekyll. De hecho Github Pages tiene soporte especial para Jekyll,
@@ -593,7 +593,7 @@ Y en pocos minutos mi blog se ve así:
 
 ![Mi blog]({{ site.baseurl }}/assets/mi-blog.jpg)
 
-##Utilizando tu dominio
+## Utilizando tu dominio
 
 Puedes configurar tu dominio para que apunte a tu url en Github:
 
