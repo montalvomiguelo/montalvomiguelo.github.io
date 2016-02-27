@@ -85,7 +85,7 @@
  * Site footer
  */
 .site-footer {
-  background: #f7f7f9;
+  background: $code-background;
   // border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 }
@@ -103,7 +103,7 @@
 
 .footer-col-wrapper {
   font-size: 84.3%;
-  color: #999999;
+  color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
