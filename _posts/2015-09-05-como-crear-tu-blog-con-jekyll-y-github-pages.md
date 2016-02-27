@@ -223,7 +223,7 @@ reiniciar el servidor cada vez que toques este archivo).
 permalink: pretty
 {% endhighlight %}
 
-##YAML Front Matter
+## YAML Front Matter
 
 Front Matter es una de las características más bonitas que tiene Jekyll.
 El YAML Front Matter se usa para guardar información acerca de nuestras páginas por ejemplo:
