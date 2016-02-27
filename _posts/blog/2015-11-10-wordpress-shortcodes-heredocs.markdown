@@ -1,7 +1,7 @@
 ---
 title:  "WordPress y Shortcodes bonitos con Heredocs"
 date:   2015-11-10 13:30
-categories: php wordpress
+categories: blog
 ---
 Los Heredocs son de gran utilidad cuando necesitamos incluir variables
 en Snippets de Html. Por ejemplo en la creación de

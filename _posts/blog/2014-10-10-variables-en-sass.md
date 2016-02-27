@@ -1,6 +1,6 @@
 ---
 title:  "Variables en Sass"
-categories: frontend
+categories: blog
 ---
 En Sass las variables comienzan con el signo de dollar. Nos
 van a permitir definir valores en un solo lugar y reutilizarlos a lo largo de nuestro proyecto.

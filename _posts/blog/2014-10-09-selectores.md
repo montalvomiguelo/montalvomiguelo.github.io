@@ -1,7 +1,7 @@
 ---
 title:  "Selectores"
 date:   2014-10-09 22:04:11
-categories: frontend
+categories: blog
 ---
 Escribir CSS con Sass es mucho más fácil que hacerlo de la manera tradicional. Supongamos que tenemos el siguiente markup:
 

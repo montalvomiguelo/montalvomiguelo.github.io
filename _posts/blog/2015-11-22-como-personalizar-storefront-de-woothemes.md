@@ -1,7 +1,7 @@
 ---
 title:  "Cómo personalizar Storefront de WooThemes"
 date:   2015-11-22 16:30
-categories: wordpress
+categories: blog
 ---
 [Storefront][storefront] es un tema de código abierto desarrollado por [WooThemes][woothemes] especialmente
 para crear tiendas en línea con WordPress y [WooCommerce][woocommerce] pues ofrece una

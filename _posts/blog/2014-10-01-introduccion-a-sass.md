@@ -1,7 +1,7 @@
 ---
 title:  "Introducción a Sass"
 date:   2014-10-01 20:30
-categories: frontend
+categories: blog
 ---
 Sass (Semantically Awesome Stylesheets) es un pre-procesador de CSS inventado en 2006 por @hcatlin. Funciona como un compilador, tu como desarrollador escribes Sass y te convierte a CSS que puede entender cualquier navegador.
 
