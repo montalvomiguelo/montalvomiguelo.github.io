@@ -29,13 +29,13 @@
           </svg>
         </span>
       </a>
-      {% for my_page in site.pages %}
+      {% for my_page in site.pages reversed %}
         {% comment %}
           Compare the page title to the URL
         {% endcomment %}
-        {% assign current = page.title | downcase %}
+        {% assign current = my_page.title | downcase %}
         {% if my_page.title %}
-          <a class="page-link{% if location == current and location != "" %} is-active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <a class="page-link{% if current == location and location != "" %} is-active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {% endif %}
       {% endfor %}
     </nav>
