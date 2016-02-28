@@ -1,3 +1,8 @@
+{% comment %}
+  Capture and store a URL
+{% endcomment %}
+{% capture location %}{{ page.url | split:'/' }}{% endcapture %}
+
 <header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
 
   <div class="wrapper">
@@ -9,7 +14,7 @@
     {% endif %}
 
     <nav class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <a class="site-logo" href="{{ site.baseurl }}/">
+      <a class="site-logo {% if location == "" %} is-active{% endif %}" href="{{ site.baseurl }}/">
         <span class="icon icon-montalvomiguelo">
           <svg viewBox="291.686 -138.9 93.857 78">
             <path fill="#333333" d="M372.257-138.9h-67.071c-7.5,0-13.5,6.214-13.5,13.714v37.5c0,5.571,3.429,10.5,8.357,12.429
@@ -25,8 +30,12 @@
         </span>
       </a>
       {% for my_page in site.pages %}
+        {% comment %}
+          Compare the page title to the URL
+        {% endcomment %}
+        {% assign current = page.title | downcase %}
         {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <a class="page-link{% if location == current and location != "" %} is-active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {% endif %}
       {% endfor %}
     </nav>
