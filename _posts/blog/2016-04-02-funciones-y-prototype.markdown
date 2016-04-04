@@ -1,5 +1,5 @@
 ---
-title:  "Funciones y Prototype"
+title:  "Funciones y prototype"
 categories: blog
 ---
 Para crear objetos personalizados podemos crear nuestros propios

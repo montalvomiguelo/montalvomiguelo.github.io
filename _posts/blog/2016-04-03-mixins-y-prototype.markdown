@@ -1,5 +1,5 @@
 ---
-title:  "Mixins"
+title:  "Mixins y prototype"
 categories: blog
 ---
 Es la manera en la cual nosotros heredamos en un objeto las propiedades
