@@ -1,6 +1,7 @@
 ---
 title:  "Instancias de Object"
 categories: blog
+tags: Javascript
 ---
 Cada vez que creamos un nuevo objeto en JavaScript este hereda en
 automático las propiedades y métodos del constructor `Object`.

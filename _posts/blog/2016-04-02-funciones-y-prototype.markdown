@@ -1,6 +1,7 @@
 ---
 title:  "Funciones y prototype"
 categories: blog
+tags: Javascript
 ---
 Para crear objetos personalizados podemos crear nuestros propios
 constructores a través de funciones con métodos y propiedades

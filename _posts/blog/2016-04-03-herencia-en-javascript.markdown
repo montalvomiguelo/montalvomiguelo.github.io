@@ -1,6 +1,7 @@
 ---
 title:  "Herencia en JavaScript"
 categories: blog
+tags: Javascript
 ---
 ## Compartir métodos entre diferentes objetos
 

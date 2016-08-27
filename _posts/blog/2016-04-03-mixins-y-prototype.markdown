@@ -1,6 +1,7 @@
 ---
 title:  "Mixins y prototype"
 categories: blog
+tags: Javascript
 ---
 Es la manera en la cual nosotros heredamos en un objeto las propiedades
 y métodos de uno, o más prototipos.

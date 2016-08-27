@@ -2,6 +2,7 @@
 title:  "¿Qué son los Hooks de WordPress?"
 date:   2015-11-15 22:40
 categories: blog
+tags: WordPress
 ---
 Son un término genérico para referirnos a un evento que sucede en WordPress
 donde nosotros podemos agregar nuestro propio código o modificar lo que WordPress

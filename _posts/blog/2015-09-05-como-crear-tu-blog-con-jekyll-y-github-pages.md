@@ -2,6 +2,7 @@
 layout: post
 title:  "Cómo crear tu Blog con Jekyll y Github Pages"
 categories: blog
+tags: Jekyll
 ---
 Con Jekyll puedes crear tu propio blog personal, un portafolio o cualquier tipo
 de sitio que tenga una serie de entradas de post sin que dependas de una

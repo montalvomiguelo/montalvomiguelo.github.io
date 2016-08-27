@@ -1,6 +1,7 @@
 ---
 title:  "Funciones y Closures"
 categories: blog
+tags: Javascript
 ---
 Un closure es simplemente un comportamiento de las funciones en
 JavaScript. Sucede cuando una __función padre__ retorna una __función hija__, al hacer esto la __función hija__ recordará el scope donde fué definida:

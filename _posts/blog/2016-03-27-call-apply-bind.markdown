@@ -1,6 +1,7 @@
 ---
 title:  "Métodos: call, apply & bind"
 categories: blog
+tags: Javascript
 ---
 Las funciones en JavaScript también son objetos, tienen
 propiedades y métodos. Algunos de los métodos más comunes son:

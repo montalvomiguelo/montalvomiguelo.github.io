@@ -1,6 +1,7 @@
 ---
 title:  "Trabajando con el constructor Object"
 categories: blog
+tags: Javascript
 ---
 Todo en JavaScript es un objeto, heredan propiedades y métodos del
 constructor `Object`.
