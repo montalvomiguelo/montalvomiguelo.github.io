@@ -1,5 +1,5 @@
 ---
-title:  "Trabajando con el el constructor Object"
+title:  "Trabajando con el constructor Object"
 categories: blog
 ---
 Todo en JavaScript es un objeto, heredan propiedades y métodos del
