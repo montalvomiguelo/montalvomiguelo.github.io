@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $brand-color;
+  border-top: 5px solid $grey-color-dark;
   min-height: 56px;
   text-align: center;
 
@@ -72,6 +72,7 @@
       height: 30px;
 
       path {
+        fill: $text-color;
         @include prefixer(transition, all .3s ease, webkit moz ms spec);
       }
     }
@@ -94,8 +95,7 @@
  * Site footer
  */
 .site-footer {
-  background: $code-bg;
-  // border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 }
 
