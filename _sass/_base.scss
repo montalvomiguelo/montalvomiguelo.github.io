@@ -292,5 +292,6 @@ input[type="submit"], input[type="button"], button {
   &:focus,
   &:active {
     background: darken($brand-color, 15%);
+    border-color: darken($brand-color, 15%);
   }
 }
