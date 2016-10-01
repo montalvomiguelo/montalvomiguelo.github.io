@@ -14,9 +14,9 @@ _Stores_.
 I'm a _Mac_ & _Arch Linux_ user, my favorite text editor is _Vim_ and my
 favorite color schemes are _wombat256mod_ and _smyck_.
 
-## Experience
+## Skills
 
-#### Backend
+### Backend
 * PHP
 * WordPress
 * Laravel
@@ -24,7 +24,7 @@ favorite color schemes are _wombat256mod_ and _smyck_.
 * ROR
 * Node.js
 
-#### Frontend
+### Frontend
 * HTML
 * Sass
 * Stylus
@@ -34,13 +34,13 @@ favorite color schemes are _wombat256mod_ and _smyck_.
 * Backbone
 * AJAX
 
-#### Database
+### Database
 * MySQL
 * PostgreSQL
 * SQLite
 * MongoDB
 
-#### Tools
+### Tools
 * iTerm2
 * Git
 * Grunt
