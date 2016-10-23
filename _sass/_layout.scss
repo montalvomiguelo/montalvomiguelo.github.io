@@ -34,13 +34,13 @@
   font-family: $font-family-monospace;
 
   .page-link {
-    color: $text-color;
+    color: $grey-color-dark;
     display: inline-block;
     line-height: $base-line-height;
 
     &:hover,
     &:focus {
-      color: $brand-color;
+      color: $text-color;
       text-decoration: none;
     }
 
@@ -64,19 +64,14 @@
       height: 30px;
 
       path {
-        fill: $grey-color-dark;
+        fill: $brand-color;
         @include prefixer(transition, all .3s ease, webkit moz ms spec);
       }
     }
   }
 
   .is-active {
-    color: $brand-color;
-    svg {
-      path {
-        fill: $brand-color;
-      }
-    }
+    color: $text-color;
   }
 
 }
