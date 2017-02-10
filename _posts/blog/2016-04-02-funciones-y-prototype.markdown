@@ -1,5 +1,5 @@
 ---
-title:  "Funciones y prototype"
+title:  "Funciones y Prototype"
 categories: blog
 tags: Javascript
 ---

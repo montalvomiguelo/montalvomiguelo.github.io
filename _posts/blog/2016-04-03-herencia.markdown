@@ -1,5 +1,5 @@
 ---
-title:  "Herencia en JavaScript"
+title:  "Herencia"
 categories: blog
 tags: Javascript
 ---

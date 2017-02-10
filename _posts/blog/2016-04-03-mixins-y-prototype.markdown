@@ -1,5 +1,5 @@
 ---
-title:  "Mixins y prototype"
+title:  "Mixins y Prototype"
 categories: blog
 tags: Javascript
 ---
