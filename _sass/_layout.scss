@@ -171,7 +171,7 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
-  font-family: $font-family-monospace;
+  // font-family: $font-family-monospace;
 }
 
 .post-link {
@@ -191,6 +191,7 @@
 .post-title {
   font-size: 42px;
   line-height: 1;
+  margin-bottom: $spacing-unit / 2;
 
   @include media-query($on-laptop) {
     font-size: 36px;
