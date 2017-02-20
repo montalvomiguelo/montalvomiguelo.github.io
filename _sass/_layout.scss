@@ -191,7 +191,7 @@
 .post-title {
   font-size: 42px;
   line-height: 1;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 6;
 
   @include media-query($on-laptop) {
     font-size: 36px;
