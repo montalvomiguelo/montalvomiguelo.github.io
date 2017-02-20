@@ -21,6 +21,16 @@ body {
   @include prefixer(text-size-adjust, 100%, webkit);
 }
 
+::-moz-selection {
+  background: $brand-color;
+  color: $background-color;
+}
+
+::selection {
+  background: $brand-color;
+  color: $background-color;
+}
+
 
 
 /**
