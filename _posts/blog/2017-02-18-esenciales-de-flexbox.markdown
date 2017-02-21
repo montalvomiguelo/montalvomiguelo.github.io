@@ -380,7 +380,7 @@ se ajusten de diferentes maneras. Por defecto _nowrap_.
 ![Wrap]({{ site.baseurl }}/assets/wrap.png)
 
 Con `flex-wrap: wrap;` los elementos que ya no caben se acomodan en la
-siguiente línea.
+siguiente línea _(líneas flex)_.
 
 ### flex-flow
 Esta propiedad es un shorthand para establecer las siguientes
@@ -587,3 +587,7 @@ agregar prefijos propietarios.
   flex: auto;
 }
 ```
+
+## Ejemplo
+
+[http://codepen.io/montalvomiguelo/full/qReBgE/](http://codepen.io/montalvomiguelo/full/qReBgE/)
