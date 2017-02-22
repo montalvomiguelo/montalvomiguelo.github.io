@@ -41,7 +41,7 @@ Prefixer mixin for generating vendor prefixes:
 //     }
 // }
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
+  @media screen and (min-width: $device) {
     @content;
   }
 }

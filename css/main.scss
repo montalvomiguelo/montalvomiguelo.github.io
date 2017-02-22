@@ -34,8 +34,11 @@ $phi: 1.618;
 // Width of the content area
 $content-width:    800px;
 
+$viewport-increment: 1px;
 $on-palm:          600px;
+$post-palm:        $on-palm + $viewport-increment;
 $on-laptop:        800px;
+$post-laptop:      $on-laptop + $viewport-increment;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
