@@ -14,8 +14,8 @@
   font-family: $font-family-monospace;
   font-size: 26px;
   font-weight: $headings-font-weight;
-  margin-bottom: 18px;
-  margin-top: 36px;
+  margin-bottom: 1em;
+  margin-top: $phi * 1em;
 
   a {
     color: $grey-color-dark;
