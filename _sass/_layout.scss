@@ -98,44 +98,40 @@
 }
 
 .footer-col-wrapper {
-  @include display-flexbox();
-  @include flex-wrap(wrap);
   font-size: 81.25%;
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
+
+  @include media-query($post-palm) {
+    @include display-flexbox();
+    @include flex-wrap(wrap);
+  }
 }
 
 .footer-col {
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
+
+  @include media-query($post-palm) {
+    @include flex(1 50%);
+  }
 }
 
 .footer-col-1 {
-  @include flex-basis(35%);
+  @include media-query($post-laptop) {
+    @include flex-basis(35%);
+  }
 }
 
 .footer-col-2 {
-  @include flex-basis(20%);
+  @include media-query($post-laptop) {
+    @include flex-basis(20%);
+  }
 }
 
 .footer-col-3 {
-  @include flex-basis(45%);
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    @include flex-basis(50%);
-  }
-
-  .footer-col-3 {
-    @include flex-basis(100%);
-  }
-}
-
-@include media-query($on-palm) {
-  .footer-col {
-    @include flex-basis(100%);
+  @include media-query($post-laptop) {
+    @include flex-basis(45%);
   }
 }
 
