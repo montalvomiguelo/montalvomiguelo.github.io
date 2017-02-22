@@ -141,6 +141,7 @@
  * Page content
  */
 .page-content {
+  @include flex-grow(1);
   padding: $spacing-unit 0;
 }
 

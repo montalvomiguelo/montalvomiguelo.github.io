@@ -18,11 +18,14 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+  @include prefixer(font-smoothing, antialiased, webkit);
+  @include prefixer(text-size-adjust, 100%, webkit);
+  @include display-flexbox();
+  @include flex-direction(column);
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  @include prefixer(font-smoothing, antialiased, webkit);
-  @include prefixer(text-size-adjust, 100%, webkit);
+  min-height: 100vh;
 }
 
 ::-moz-selection {
