@@ -18,14 +18,14 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  @include prefixer(font-smoothing, antialiased, webkit);
-  @include prefixer(text-size-adjust, 100%, webkit);
   @include display-flexbox();
   @include flex-direction(column);
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 ::-moz-selection {
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $phi*1rem;
+  margin-bottom: $phi * 1rem;
 }
 
 
