@@ -10,7 +10,7 @@
 .site-title {
   line-height: normal;
   display: inline-block;
-  font-family: $font-family-monospace;
+  font-family: $header-font-family;
   font-size: 26px;
   font-weight: $headings-font-weight;
   margin-bottom: 1em;
@@ -32,7 +32,7 @@
   border-bottom: 1px solid $grey-color-light;
   border-top: 1px solid $grey-color-light;
   position: relative;
-  font-family: $font-family-monospace;
+  font-family: $header-font-family;
   min-height: 70px;
 
   .page-link {
@@ -160,7 +160,6 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
-  // font-family: $font-family-monospace;
 }
 
 .post-link {
@@ -221,7 +220,7 @@
  * Portfolio
  */
 .portfolio-list {
-  font-family: $font-family-monospace;
+  font-family: $header-font-family;
   list-style: none;
   margin-bottom: 0;
   margin-left: -$spacing-unit / 2;
