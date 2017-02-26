@@ -27,13 +27,14 @@
 
 .site-nav {
   @include display-flexbox();
-  @include align-items(center);
   @include justify-content(center);
+  @include flex-wrap(wrap);
   border-bottom: 1px solid $grey-color-light;
   border-top: 1px solid $grey-color-light;
-  position: relative;
   font-family: $header-font-family;
-  min-height: 70px;
+  padding-bottom: $phi * .85em;
+  padding-top: $phi * .85em;
+  position: relative;
 
   .page-link {
     color: $grey-color-dark;
