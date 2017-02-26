@@ -112,25 +112,26 @@
   padding-left: $spacing-unit / 2;
 
   @include media-query($post-palm) {
-    @include flex(1 50%);
+    @include flex-grow(1);
+    width: 50%;
   }
 }
 
 .footer-col-1 {
   @include media-query($post-laptop) {
-    @include flex-basis(35%);
+    width: 35%;
   }
 }
 
 .footer-col-2 {
   @include media-query($post-laptop) {
-    @include flex-basis(20%);
+    width: 20%;
   }
 }
 
 .footer-col-3 {
   @include media-query($post-laptop) {
-    @include flex-basis(45%);
+    width: 45%;
   }
 }
 
@@ -237,11 +238,11 @@
     text-align: center;
 
     @include media-query($post-palm) {
-      @include flex-basis(50%);
+      width: 50%;
     }
 
     @include media-query($post-laptop) {
-      @include flex-basis(33.33%);
+      width: 33.33%;
     }
   }
 
