@@ -115,8 +115,8 @@ a {
 
   &:hover,
   &:focus {
-    color: darken($brand-color, 15%);
-    // text-decoration: underline;
+    //color: darken($brand-color, 15%);
+    text-decoration: underline;
   }
 
 }
