@@ -115,23 +115,22 @@
     @include flex-grow(1);
     width: 50%;
   }
-}
 
-.footer-col-1 {
   @include media-query($post-laptop) {
-    width: 35%;
-  }
-}
-
-.footer-col-2 {
-  @include media-query($post-laptop) {
-    width: 20%;
+    @include flex(1);
+    width: auto;
   }
 }
 
 .footer-col-3 {
   @include media-query($post-laptop) {
-    width: 45%;
+    @include flex-grow(2.25);
+  }
+}
+
+.footer-col-1 {
+  @include media-query($post-laptop) {
+    @include flex-grow(1.25);
   }
 }
 
