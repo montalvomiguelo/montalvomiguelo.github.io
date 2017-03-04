@@ -4,7 +4,7 @@ email: me@montalvomiguelo.com
 tagline: Web developer and musician
 description: Web developer and musician from México. I work for small businesses, start-ups, individuals and web/design agencies.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://montalvomiguelo.com" # the base hostname & protocol for your site
+url: "https://www.montalvomiguelo.com" # the base hostname & protocol for your site
 twitter_username: montalvomiguelo
 github_username:  montalvomiguelo
 
