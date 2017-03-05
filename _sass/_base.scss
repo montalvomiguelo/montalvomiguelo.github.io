@@ -109,13 +109,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  @include prefixer(transition, all .3s ease, webkit moz ms spec);
   color: $brand-color;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    //color: darken($brand-color, 15%);
     text-decoration: underline;
   }
 
