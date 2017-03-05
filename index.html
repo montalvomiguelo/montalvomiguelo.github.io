@@ -7,7 +7,7 @@ layout: default
   <h3 class="site-description">{{ site.description }}</h3>
 
   <ul class="post-list" itemscope itemtype="http://schema.org/Blog">
-    {% for post in site.categories['blog'] %}
+    {% for post in paginator.posts %}
       <li itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
           <h2 itemprop="name">{{ post.title }}</h2>

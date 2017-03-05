@@ -34,3 +34,6 @@ defaults:
 # Collections
 collections:
   - projects
+
+# Enable pagination
+paginate: 10
