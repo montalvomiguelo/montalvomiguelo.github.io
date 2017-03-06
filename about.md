@@ -18,6 +18,6 @@ PHP, WordPress, Laravel, Ruby, ROR, Node.js
 
 HTML, Sass, Stylus, CSS JavaScript, jQuery, Backbone, AJAX
 
-MySQL, PostgreSQL, SQLite, MongoDB,
+MySQL, PostgreSQL, SQLite, MongoDB
 
-iTerm2, Git, Grunt, Gulp,
+iTerm2, Git, Grunt, Gulp
