@@ -36,4 +36,4 @@ collections:
   - projects
 
 # Enable pagination
-paginate: 10
+#paginate: 10
