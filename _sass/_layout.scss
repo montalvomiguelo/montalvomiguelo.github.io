@@ -81,8 +81,11 @@
  * Site footer
  */
 .site-footer {
+  background: darken($background-color, .6%);
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0 $spacing-unit / 6;
+  padding: $spacing-unit 0;
+  font-size: 81.25%;
+  color: $grey-color;
 }
 
 .footer-heading {
@@ -102,19 +105,35 @@
 }
 
 .footer-col-wrapper {
-  font-size: 81.25%;
-  color: $grey-color;
   margin-left: -$spacing-unit / 2;
 
   @include media-query($post-palm) {
     @include display-flexbox();
-    @include justify-content(space-between);
+    @include flex-wrap(wrap);
   }
 }
 
 .footer-col {
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
+
+  @include media-query($post-palm) {
+    width: 50%;
+  }
+
+  @include media-query($post-laptop) {
+    width: 33.33%;
+  }
+}
+
+.footer-col-1 {
+  @include media-query($post-palm) {
+    width: 100%;
+  }
+
+  @include media-query($post-laptop) {
+    width: 33.33%;
+  }
 }
 
 
