@@ -18,7 +18,7 @@
   5  = 5
   6  = 5 + 1
   7  = 5 + 2
-  8  = 5 +3
+  8  = 5 + 3
   9  = 5 + 3 + 1
   10 = 5 + reverse 5
   11 = 5 + reverse 5 + 1
@@ -36,10 +36,14 @@
   5 row = 1 large post on the left, 4 small on the right
   reverse 5 row = 4 small posts on the left, 1 large on the right
 {% endcomment %}
-{% if remaining_length_posts > 5 %}
+{% if remaining_length_posts >= 5 %}
   {% assign is_five_row_post = true %}
 {% else %}
   {% assign is_five_row_post = false %}
+{% endif %}
+
+{% if five_row_index_post > 1 and five_row_index_post < 6 %}
+  {% assign is_five_row_post = true %}
 {% endif %}
 
 {% comment %}
