@@ -161,9 +161,13 @@
   }
 }
 
-.post-list {
+%post-list {
   margin-left: 0;
   list-style: none;
+}
+
+.post-list {
+  @extend %post-list;
 
   @include media-query($post-palm) {
     @include display-flexbox();
@@ -171,21 +175,75 @@
     margin-left: -$spacing-unit / 2;
   }
 
-  > li {
-    margin-bottom: $spacing-unit / 2;
-    height: $base-font-size * $phi * 7;
+  @include element(row) {
 
     @include media-query($post-palm) {
-      height: $base-font-size * $phi * 8;
-      width: 50%;
       padding-left: $spacing-unit / 2;
+      width: 50%;
+
+      .post-list__item {
+        width: 100%;
+      }
     }
 
     @include media-query($post-laptop) {
-      height: $base-font-size * $phi * 9;
+      @include display-flexbox();
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
+  @include element(item) {
+    @include media-query($post-palm) {
+      padding-left: $spacing-unit / 2;
+      width: 50%;
+    }
+
+    @include media-query($post-laptop) {
       width: 33.33%;
     }
   }
+
+  @include modifier(primary) {
+    @extend %post-list;
+
+    @include media-query($post-palm) {
+      margin-left: -$spacing-unit / 2;
+    }
+
+    @include media-query($post-laptop) {
+      padding-left: $spacing-unit / 2;
+      @include flex(1);
+
+      .post-link {
+        height: $base-font-size * $phi * 9 * 2 + ($spacing-unit / 2);
+      }
+    }
+  }
+
+  @include modifier(secondary) {
+    @extend %post-list;
+
+    @include media-query($post-palm) {
+      margin-left: -$spacing-unit / 2;
+    }
+
+    @include media-query($post-laptop) {
+      padding-left: $spacing-unit / 2;
+      @include flex(2);
+    }
+
+    @include media-query($post-laptop) {
+      @include display-flexbox();
+      @include flex-wrap(wrap);
+
+      .post-list__item {
+        width: 50%;
+      }
+    }
+
+  }
+
 }
 
 .post-meta {
@@ -196,8 +254,17 @@
 .post-link {
   border: 1px solid $grey-color-light;
   display: block;
-  height: 100%;
+  height: $base-font-size * $phi * 7;
+  margin-bottom: $spacing-unit / 2;
   padding: $spacing-unit / 2;
+
+  @include media-query($post-palm) {
+    height: $base-font-size * $phi * 8;
+  }
+
+  @include media-query($post-laptop) {
+    height: $base-font-size * $phi * 9;
+  }
 
   &:hover {
     background: $brand-color;
@@ -216,6 +283,18 @@
 
   h2 {
     font-size: 24px;
+  }
+
+}
+
+.pagination {
+  @include display-flexbox();
+  @include justify-content(center);
+  margin: $spacing-unit 0;
+
+  span,
+  a {
+    padding: .5em;
   }
 }
 
