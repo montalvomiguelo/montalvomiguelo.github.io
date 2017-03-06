@@ -13,34 +13,11 @@ _Stores_.
 I'm a _Mac_ & _Arch Linux_ user, my favorite text editor is _Vim_ and my
 favorite color schemes are _wombat256mod_ and _smyck_.
 
-## Skills
+## Skills and technologies
+PHP, WordPress, Laravel, Ruby, ROR, Node.js
 
-### Backend
-* PHP
-* WordPress
-* Laravel
-* Ruby
-* ROR
-* Node.js
+HTML, Sass, Stylus, CSS JavaScript, jQuery, Backbone, AJAX
 
-### Frontend
-* HTML
-* Sass
-* Stylus
-* CSS
-* JavaScript
-* jQuery
-* Backbone
-* AJAX
+MySQL, PostgreSQL, SQLite, MongoDB,
 
-### Database
-* MySQL
-* PostgreSQL
-* SQLite
-* MongoDB
-
-### Tools
-* iTerm2
-* Git
-* Grunt
-* Gulp
+iTerm2, Git, Grunt, Gulp,
