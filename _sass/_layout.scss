@@ -274,16 +274,34 @@
 
     h2 {
       text-decoration: underline;
-      color: white;
+      color: $background-color;
     }
 
     .post-meta {
-      color: white;
+      color: $background-color;
+      &:before {
+        background: $background-color;
+      }
     }
   }
 
   h2 {
     font-size: 24px;
+  }
+
+  .post-meta {
+    padding-bottom: .5em;
+    position: relative;
+    &:before {
+      background: $grey-color-light;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 0;
+      position: absolute;
+      width: $phi * $base-font-size;
+    }
   }
 
 }
