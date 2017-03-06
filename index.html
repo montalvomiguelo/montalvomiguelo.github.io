@@ -4,7 +4,11 @@ layout: default
 
 <div class="home">
 
-  <h3 class="site-description">{{ site.description }}</h3>
+  {% if paginator.page > 1 %}
+    <h3 class="site-description">Posts</h3>
+  {% else %}
+    <h3 class="site-description">{{ site.description }}</h3>
+  {% endif %}
 
   <ul class="post-list" itemscope itemtype="http://schema.org/Blog">
     {% comment %}
@@ -23,29 +27,7 @@ layout: default
   </ul>
 
   {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;</a>
-    {% else %}
-      <span>&larr;</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span>{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&rarr;</a>
-    {% else %}
-      <span>&rarr;</span>
-    {% endif %}
-  </div>
+    {% include pagination.html %}
   {% endif %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
