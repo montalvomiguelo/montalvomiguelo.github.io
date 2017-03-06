@@ -197,6 +197,8 @@
   }
 
   @include element(item) {
+    margin-bottom: $spacing-unit / 2;
+
     @include media-query($post-palm) {
       padding-left: $spacing-unit / 2;
       width: 50%;
@@ -215,12 +217,9 @@
     }
 
     @include media-query($post-laptop) {
-      padding-left: $spacing-unit / 2;
       @include flex(1);
-
-      .post-link {
-        height: $base-font-size * $phi * 9 * 2 + ($spacing-unit / 2);
-      }
+      @include display-flexbox();
+      padding-left: $spacing-unit / 2;
     }
   }
 
@@ -257,17 +256,8 @@
 .post-link {
   border: 1px solid $grey-color-light;
   display: block;
-  height: $base-font-size * $phi * 7;
-  margin-bottom: $spacing-unit / 2;
-  padding: $spacing-unit / 2;
-
-  @include media-query($post-palm) {
-    height: $base-font-size * $phi * 8;
-  }
-
-  @include media-query($post-laptop) {
-    height: $base-font-size * $phi * 9;
-  }
+  height: 100%;
+  padding: $spacing-unit / 2 $spacing-unit / 2 $spacing-unit * $phi;
 
   &:hover {
     background: darken($background-color, .6%);
