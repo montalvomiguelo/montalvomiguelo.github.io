@@ -108,32 +108,13 @@
 
   @include media-query($post-palm) {
     @include display-flexbox();
-    @include flex-wrap(wrap);
+    @include justify-content(space-between);
   }
 }
 
 .footer-col {
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
-
-  @include media-query($post-palm) {
-    @include flex-grow(1);
-    width: 50%;
-  }
-
-  @include media-query($post-laptop) {
-    width: auto;
-  }
-}
-
-.footer-col-1 {
-  @include media-query($post-palm) {
-    width: 100%;
-  }
-
-  @include media-query($post-laptop) {
-    width: auto;
-  }
 }
 
 
