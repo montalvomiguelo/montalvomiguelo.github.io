@@ -82,12 +82,17 @@
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 0 $spacing-unit / 6;
 }
 
 .footer-heading {
   font-size: 18px;
   margin-bottom: $spacing-unit / 2;
+  color: $text-color;
+}
+
+.footer-subheading {
+  font-size: $small-font-size;
 }
 
 .contact-list,
@@ -117,20 +122,17 @@
   }
 
   @include media-query($post-laptop) {
-    @include flex(1);
     width: auto;
   }
 }
 
-.footer-col-3 {
-  @include media-query($post-laptop) {
-    @include flex-grow(2.25);
-  }
-}
-
 .footer-col-1 {
+  @include media-query($post-palm) {
+    width: 100%;
+  }
+
   @include media-query($post-laptop) {
-    @include flex-grow(1.25);
+    width: auto;
   }
 }
 
