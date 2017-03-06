@@ -146,19 +146,20 @@
 
 .page-heading {
   font-size: 20px;
-}
-
-.site-description {
-  @extend .page-heading;
-  margin: ($spacing-unit * 2) auto ($spacing-unit * 3);
-  max-width: $content-width / $phi;
-  padding: 0 ($spacing-unit / 2);
+  margin: $spacing-unit * 2 0 $spacing-unit * 3;
   text-align: center;
 
   @include media-query($post-palm) {
     margin-top: $spacing-unit * 3;
     margin-bottom: $spacing-unit * 4;
   }
+}
+
+.site-description {
+  @extend .page-heading;
+  max-width: $content-width / $phi;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 %post-list {
@@ -304,7 +305,12 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin: $spacing-unit * 2 0 $spacing-unit * $phi;
+  text-align: center;
+
+  @include media-query($post-palm) {
+    margin-top: $spacing-unit * 3;
+  }
 }
 
 .post-title {
@@ -353,9 +359,7 @@
 .portfolio-list {
   font-family: $header-font-family;
   list-style: none;
-  margin-bottom: 0;
   margin-left: -$spacing-unit / 2;
-  margin-top: 1.1rem;
 
   @include media-query($post-palm) {
     @include display-flexbox();
