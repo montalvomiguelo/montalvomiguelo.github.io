@@ -270,21 +270,13 @@
   }
 
   &:hover {
-    background: $brand-color;
-    border-color: transparent;
+    background: darken($background-color, .6%);
     text-decoration: none;
 
     h2 {
       text-decoration: underline;
-      color: $background-color;
     }
 
-    .post-meta {
-      color: $background-color;
-      &:before {
-        background: $background-color;
-      }
-    }
   }
 
   h2 {
