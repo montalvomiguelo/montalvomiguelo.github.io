@@ -84,7 +84,7 @@
   background: darken($background-color, .6%);
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  font-size: 81.25%;
+  font-size: $small-font-size;
   color: $grey-color;
   text-align: center;
 }
@@ -100,21 +100,26 @@
 }
 
 .page-heading {
-  font-size: 20px;
-  margin: $spacing-unit * 2 0 $spacing-unit * 3;
+  font-size: 26px;
+  margin: $spacing-unit * 2 0 $spacing-unit * $phi;
   text-align: center;
 
   @include media-query($post-palm) {
     margin-top: $spacing-unit * 3;
-    margin-bottom: $spacing-unit * 4;
   }
 }
 
 .site-description {
   @extend .page-heading;
+  font-size: 18px;
   max-width: $content-width / $phi;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: $spacing-unit * 3;
+
+  @include media-query($post-palm) {
+    margin-bottom: $spacing-unit * 4;
+  }
 }
 
 %post-list {
@@ -152,7 +157,7 @@
   @include element(item) {
     @include display-flexbox();
     margin-bottom: $spacing-unit / 2;
-    min-height: $spacing-unit / 2 * 14;
+    min-height: $spacing-unit / 2 * 12;
 
     @include media-query($post-palm) {
       padding-left: $spacing-unit / 2;
@@ -209,9 +214,9 @@
 }
 
 .post-link {
+  @include flex-grow(1);
   border: 1px solid $grey-color-light;
   padding: $spacing-unit / 2 $spacing-unit / 2 $spacing-unit * $phi;
-  width: 100%;
 
   &:hover {
     background: darken($background-color, .6%);
@@ -224,7 +229,7 @@
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .post-meta {
@@ -270,40 +275,24 @@
 }
 
 .post-title {
-  font-size: 36px;
+  font-size: 26px;
   line-height: 1;
   margin-bottom: $spacing-unit / 6;
-
-  @include media-query($post-laptop) {
-    font-size: 42px;
-  }
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
 
   h2 {
-    font-size: 28px;
-
-    @include media-query($post-laptop) {
-      font-size: 32px;
-    }
+    font-size: 22px;
   }
 
   h3 {
-    font-size: 22px;
-
-    @include media-query($post-laptop) {
-      font-size: 26px;
-    }
+    font-size: 16px;
   }
 
   h4 {
-    font-size: 18px;
-
-    @include media-query($post-laptop) {
-      font-size: 20px;
-    }
+    font-size: 12px;
   }
 }
 
