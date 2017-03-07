@@ -86,54 +86,7 @@
   padding: $spacing-unit 0;
   font-size: 81.25%;
   color: $grey-color;
-}
-
-.footer-heading {
-  font-size: $base-font-size;
-  margin-bottom: $spacing-unit / 2;
-  color: $text-color;
-}
-
-.footer-subheading {
-  font-size: $small-font-size;
-}
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.footer-col-wrapper {
-  margin-left: -$spacing-unit / 2;
-
-  @include media-query($post-palm) {
-    @include display-flexbox();
-    @include flex-wrap(wrap);
-  }
-}
-
-.footer-col {
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-
-  @include media-query($post-palm) {
-    width: 50%;
-  }
-
-  @include media-query($post-laptop) {
-    width: 33.33%;
-  }
-}
-
-.footer-col-1 {
-  @include media-query($post-palm) {
-    width: 100%;
-  }
-
-  @include media-query($post-laptop) {
-    width: 33.33%;
-  }
+  text-align: center;
 }
 
 
