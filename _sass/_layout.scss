@@ -100,7 +100,7 @@
 }
 
 .page-heading {
-  font-size: 26px;
+  font-size: 22px;
   margin: $spacing-unit * 2 0 $spacing-unit * $phi;
   text-align: center;
 
@@ -111,7 +111,7 @@
 
 .site-description {
   @extend .page-heading;
-  font-size: 18px;
+  font-size: 20px;
   max-width: $content-width / $phi;
   margin-left: auto;
   margin-right: auto;
@@ -233,7 +233,7 @@
   }
 
   .post-meta {
-    padding-bottom: .5em;
+    padding-bottom: 1em;
     position: relative;
     &:before {
       background: $grey-color-light;
@@ -275,7 +275,7 @@
 }
 
 .post-title {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1;
   margin-bottom: $spacing-unit / 6;
 }
