@@ -41,10 +41,11 @@ body {
 
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
+ * margin for easier control within type scales as it avoids margin collapsing.
  */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 
 p, blockquote, pre,
@@ -128,7 +129,7 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: 18px;
+  font-size: $base-font-size * 1.2;
   font-style: italic;
 
   > :last-child {
