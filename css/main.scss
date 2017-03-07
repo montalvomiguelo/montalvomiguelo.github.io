@@ -7,13 +7,15 @@
 // Global Config
 // ==========================================================================
 
+$phi: 1.618;
+
 $base-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 $header-font-family: "Lucida Console", Monaco, monospace;
-$base-font-size:   16px;
+$base-font-size:   15px;
 $base-font-weight: 400;
 $headings-font-weight: 500;
-$small-font-size:  $base-font-size * 0.8125;
-$base-line-height: 1.5;
+$small-font-size:  13px;
+$base-line-height: $phi;
 
 $spacing-unit:     30px;
 
@@ -25,7 +27,6 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$phi: 1.618;
 
 // Width of the content area
 $content-width:    800px;
