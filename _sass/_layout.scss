@@ -257,6 +257,7 @@
   border: 1px solid $grey-color-light;
   display: block;
   height: 100%;
+  min-height: $phi * 8em;
   padding: $spacing-unit / 2 $spacing-unit / 2 $spacing-unit * $phi;
 
   &:hover {
