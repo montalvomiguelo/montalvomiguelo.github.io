@@ -197,7 +197,9 @@
   }
 
   @include element(item) {
+    @include display-flexbox();
     margin-bottom: $spacing-unit / 2;
+    min-height: $spacing-unit / 2 * 14;
 
     @include media-query($post-palm) {
       padding-left: $spacing-unit / 2;
@@ -255,10 +257,8 @@
 
 .post-link {
   border: 1px solid $grey-color-light;
-  display: block;
-  height: 100%;
-  min-height: $phi * 8em;
   padding: $spacing-unit / 2 $spacing-unit / 2 $spacing-unit * $phi;
+  width: 100%;
 
   &:hover {
     background: darken($background-color, .6%);
