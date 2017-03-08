@@ -71,13 +71,16 @@
  * Site footer
  */
 .site-footer {
-  background: darken($background-color, .6%);
-  border-top: 1px solid $grey-color-light;
+  background: $text-color;
   padding: $spacing-unit 0;
   font-size: $small-font-size;
   font-family: $header-font-family;
-  color: $grey-color;
+  color: white;
   text-align: center;
+
+  a {
+    color: inherit;
+  }
 }
 
 
