@@ -94,7 +94,7 @@
 }
 
 .page-heading {
-  font-size: $base-font-size * 1.44;
+  font-size: $base-font-size * 1.728;
   margin: $spacing-unit * 2 0 $spacing-unit * $phi;
   text-align: center;
 
@@ -105,7 +105,6 @@
 
 .site-description {
   @extend .page-heading;
-  font-size: $base-font-size * 1.44;
   max-width: $content-width / $phi;
   margin-left: auto;
   margin-right: auto;
@@ -269,7 +268,7 @@
 }
 
 .post-title {
-  font-size: $base-font-size * 1.44;
+  font-size: $base-font-size * 1.728;
   line-height: 1;
   margin-bottom: $spacing-unit / 6;
 }
