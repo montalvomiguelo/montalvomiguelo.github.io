@@ -23,9 +23,9 @@ $text-color:       #232323;
 $background-color: #ffffff;
 $brand-color:      #1201ff;
 
-$grey-color:       lighten($text-color, 23%);
-$grey-color-light: lighten($grey-color, 46%);
-$grey-color-dark:  darken($grey-color, 23%);
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 
 // Width of the content area
