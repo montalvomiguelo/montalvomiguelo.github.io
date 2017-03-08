@@ -2,26 +2,36 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  font-family: $header-font-family;
   text-align: center;
+  padding: $spacing-unit 0;
+
+  .wrapper {
+    @include media-query($post-palm) {
+      @include display-flexbox();
+      @include align-items(baseline);
+      @include justify-content(space-between);
+    }
+  }
 
 }
 
 .site-title {
-  line-height: normal;
-  display: inline-block;
-  font-family: $header-font-family;
-  font-size: $base-font-size * 1.728;
+  font-size: $base-font-size;
   font-weight: $headings-font-weight;
-  margin-bottom: 1em;
-  margin-top: $phi * 1em;
+  margin-bottom: $phi * 1em;
+
+  &:before {
+    content: "@";
+    color: $brand-color;
+  }
+
+  @include media-query($post-palm) {
+    margin-bottom: 0;
+  }
 
   a {
-    color: $grey-color-dark;
-
-    &:visited {
-      color: $grey-color-dark;
-    }
+    color: $text-color;
   }
 }
 
@@ -29,12 +39,6 @@
   @include display-flexbox();
   @include justify-content(center);
   @include flex-wrap(wrap);
-  border-bottom: 1px solid $grey-color-light;
-  border-top: 1px solid $grey-color-light;
-  font-family: $header-font-family;
-  padding-bottom: $phi * .85em;
-  padding-top: $phi * .85em;
-  position: relative;
 
   .page-link {
     color: $grey-color-dark;
@@ -44,29 +48,15 @@
       color: $text-color;
     }
 
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
+    padding-left: $phi * .5em;
+    padding-right: $phi * .5em;
 
-  .site-logo {
-    background: $background-color;
-    left: 50%;
-    line-height: 0;
-    margin-left: -15px;
-    position: absolute;
-    top: -15px;
-    z-index: 1;
-
-    svg {
-      width: 30px;
-      height: 30px;
-
-      path {
-        fill: $brand-color;
+    &:last-child {
+      @include media-query($post-palm) {
+        padding-right: 0;
       }
     }
+
   }
 
   .is-active {
@@ -112,7 +102,7 @@
 
 .site-description {
   @extend .page-heading;
-  font-size: $base-font-size * 1.2;
+  font-size: $base-font-size * 1.44;
   max-width: $content-width / $phi;
   margin-left: auto;
   margin-right: auto;
