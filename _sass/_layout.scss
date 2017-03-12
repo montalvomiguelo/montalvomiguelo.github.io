@@ -175,6 +175,17 @@
       @include display-flexbox();
       padding-left: $spacing-unit / 2;
     }
+
+    .post-link {
+      color: white;
+
+      .post-meta {
+        color: inherit;
+        &:before {
+          background: white;
+        }
+      }
+    }
   }
 
   @include modifier(secondary) {
@@ -209,11 +220,10 @@
 
 .post-link {
   @include flex-grow(1);
-  border: 1px solid $grey-color-light;
+  background: lighten($text-color, 84.5%);
   padding: $spacing-unit / 2 $spacing-unit / 2 $spacing-unit * $phi;
 
   &:hover {
-    background: darken($background-color, .6%);
     text-decoration: none;
 
     h2 {
@@ -303,6 +313,10 @@
   @include media-query($post-palm) {
     @include display-flexbox();
     @include flex-wrap(wrap);
+  }
+
+  a {
+    color: $text-color;
   }
 
   li {

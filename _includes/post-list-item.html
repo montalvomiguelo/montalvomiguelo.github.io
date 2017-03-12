@@ -1,5 +1,5 @@
   <li class="post-list__item" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url" data-five-index="{{ five_row_index_post }}">
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url"{% if post.color %} style="background: {{ post.color }};"{% endif %}>
       <h2 itemprop="name">{{ post.title }}</h2>
       <span class="post-meta">
         {% if post.tags.size > 0 %}
