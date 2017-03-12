@@ -23,10 +23,9 @@ $text-color:       #232323;
 $background-color: #ffffff;
 $brand-color:      #1201ff;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
+$grey-color:       lighten($text-color, 43%);
+$grey-color-light: lighten($text-color, 77.5%);
+$grey-color-dark:  lighten($text-color, 17%);
 
 // Width of the content area
 $content-width:    800px;
