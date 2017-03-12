@@ -15,9 +15,9 @@ favorite color schemes are _wombat256mod_ and _smyck_.
 
 ## Skills and technologies
 PHP, WordPress, Laravel, Ruby, ROR, Node.js
-
+<br>
 HTML, Sass, Stylus, CSS JavaScript, jQuery, Backbone, AJAX
-
+<br>
 MySQL, PostgreSQL, SQLite, MongoDB
-
+<br>
 iTerm2, Git, Grunt, Gulp
