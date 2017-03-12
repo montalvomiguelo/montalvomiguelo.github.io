@@ -4,6 +4,11 @@
 .highlight {
   @extend %vertical-rhythm;
 
+  code,
+  pre {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  }
+
   .c     { color: #998; font-style: italic; } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error
   .k     { color: #8959a8; font-weight: bold } // Keyword
