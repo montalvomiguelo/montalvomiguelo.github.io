@@ -272,6 +272,9 @@
 .post-header {
   margin: $spacing-unit * 2 0 $spacing-unit * $phi;
   text-align: center;
+  max-width: $content-width / $phi;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media-query($post-palm) {
     margin-top: $spacing-unit * 3;
