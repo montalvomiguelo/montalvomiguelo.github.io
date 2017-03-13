@@ -65,6 +65,7 @@ Prefixer mixin for generating vendor prefixes:
 
 @mixin flex-direction($value: row) {
   @include prefixer(flex-direction, $value, webkit moz spec);
+  -ms-flex-direction: $value;
 }
 
 @mixin align-items($value: stretch) {
@@ -88,11 +89,6 @@ Prefixer mixin for generating vendor prefixes:
 @mixin flex-basis($width: auto) {
   @include prefixer(flex-basis, $width, webkit moz spec);
   -ms-flex-preferred-size: $width;
-}
-
-@mixin align-self($align: auto) {
-  @include prefixer(align-self, $align, webkit moz spec);
-  -ms-flex-item-align: $align;
 }
 
 @mixin justify-content($value: flex-start) {
