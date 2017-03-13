@@ -14,7 +14,6 @@
 
   <link rel="shortcut icon" href="{{ "/assets/favicon.png" | site.baseurl }}">
 
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Karla" rel="stylesheet">
   <style type="text/css">
     {% capture styles_scss %}{% include styles.scss %}{% endcapture %}
     {{ styles_scss | scssify }}
@@ -22,6 +21,15 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Inconsolata', 'Karla']
+      }
+    });
+  </script>
 
   {% include analytics.html %}
 </head>
