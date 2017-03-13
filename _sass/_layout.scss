@@ -36,34 +36,37 @@
   }
 }
 
+%site-nav__link {
+  color: $grey-color-dark;
+
+  &:hover,
+  &:focus {
+    color: $text-color;
+  }
+
+  padding-left: $phi * .5em;
+  padding-right: $phi * .5em;
+
+  &:last-child {
+    @include media-query($post-palm) {
+      padding-right: 0;
+    }
+  }
+}
+
 .site-nav {
   @include display-flexbox();
   @include justify-content(center);
   @include flex-wrap(wrap);
 
-  .page-link {
-    color: $grey-color-dark;
+  @include element(link) {
+    @extend %site-nav__link;
 
-    &:hover,
-    &:focus {
+    @include modifier(active) {
+      @extend %site-nav__link;
       color: $text-color;
     }
-
-    padding-left: $phi * .5em;
-    padding-right: $phi * .5em;
-
-    &:last-child {
-      @include media-query($post-palm) {
-        padding-right: 0;
-      }
-    }
-
   }
-
-  .is-active {
-    color: $text-color;
-  }
-
 }
 
 
