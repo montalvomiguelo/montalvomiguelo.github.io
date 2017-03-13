@@ -321,14 +321,9 @@
     @include flex-wrap(wrap);
   }
 
-  a {
-    color: $text-color;
-  }
-
-  li {
+  @include element(item) {
     margin-bottom: $spacing-unit;
     padding-left: $spacing-unit / 2;
-    text-align: center;
 
     @include media-query($post-palm) {
       width: 50%;
@@ -337,12 +332,11 @@
     @include media-query($post-laptop) {
       width: 33.33%;
     }
-  }
 
-  span {
-    display: block;
-    font-size: $small-font-size;
-    margin-top: 1rem;
+    span {
+      display: block;
+      font-size: $small-font-size;
+      margin-top: 1rem;
+    }
   }
-
 }

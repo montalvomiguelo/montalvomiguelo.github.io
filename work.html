@@ -9,7 +9,7 @@ permalink: /work/
 
   <ul class="portfolio-list">
     {% for project in site.projects %}
-      <li>
+      <li class="portfolio-list__item">
         <a href="{{ project.link }}" target="_blank">
           <img src="/assets/{{ project.image }}" alt="{{ project.title }}">
           <span>{{ project.title }}</span>
