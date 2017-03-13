@@ -95,7 +95,7 @@
 }
 
 .page-heading {
-  font-size: $base-font-size * 1.728;
+  font-size: $alpha-font-size;
   margin: $spacing-unit * 2 0 $spacing-unit * $phi;
   text-align: center;
 
@@ -233,7 +233,7 @@
   }
 
   h2 {
-    font-size: $base-font-size * 1.2;
+    font-size: $gamma-font-size;
   }
 
   .post-meta {
@@ -279,7 +279,7 @@
 }
 
 .post-title {
-  font-size: $base-font-size * 1.728;
+  font-size: $alpha-font-size;
   line-height: 1;
   margin-bottom: $spacing-unit / 6;
 }
@@ -288,11 +288,11 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    font-size: $base-font-size * 1.44;
+    font-size: $beta-font-size;
   }
 
   h3 {
-    font-size: $base-font-size * 1.2;
+    font-size: $gamma-font-size;
   }
 
   h4 {

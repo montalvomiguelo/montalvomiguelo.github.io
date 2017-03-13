@@ -14,8 +14,13 @@ $header-font-family: 'Inconsolata', monospace;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $headings-font-weight: 400;
-$small-font-size:  $base-font-size * 0.833;
 $base-line-height: 1.5;
+
+// http://www.modularscale.com/?16&px&1.2&web&text
+$small-font-size:  $base-font-size * 0.833;
+$alpha-font-size: $base-font-size * 1.728;
+$beta-font-size: $base-font-size * 1.44;
+$gamma-font-size: $base-font-size * 1.2;
 
 $spacing-unit:     30px;
 
