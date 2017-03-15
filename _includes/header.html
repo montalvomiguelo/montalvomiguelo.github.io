@@ -8,8 +8,7 @@
   <div class="wrapper">
 
     {% capture site_title %}{{ site.title | remove: ' ' | downcase }}{% endcapture %}
-
-    {% if page.url != "/" %}
+    {% if page.title %}
       <p class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site_title }}</a></p>
     {% else %}
       <h1 class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site_title }}</a></h1>
