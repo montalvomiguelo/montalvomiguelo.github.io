@@ -34,7 +34,7 @@ Prefixer mixin for generating vendor prefixes:
 }
 
 // Use media queries like this:
-// @include media-query($on-palm) {
+// @include media-query($small) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;

@@ -44,10 +44,10 @@ $grey-color-dark:  lighten($text-color, 17%);
 $content-width:    800px;
 
 $viewport-increment: 1px;
-$on-palm:          600px;
-$post-palm:        $on-palm + $viewport-increment;
-$on-laptop:        800px;
-$post-laptop:      $on-laptop + $viewport-increment;
+$small:            600px;
+$post-small:       $small + $viewport-increment;
+$medium:           800px;
+$post-medium:      $medium + $viewport-increment;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
