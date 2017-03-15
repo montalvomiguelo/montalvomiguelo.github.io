@@ -10,9 +10,9 @@
     {% capture site_title %}{{ site.title | remove: ' ' | downcase }}{% endcapture %}
 
     {% if page.url != "/" %}
-      <p class="site-title"><a href="{{ site.baseurl }}/">{{ site_title }}</a></p>
+      <p class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site_title }}</a></p>
     {% else %}
-      <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site_title }}</a></h1>
+      <h1 class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site_title }}</a></h1>
     {% endif %}
 
     <nav class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
