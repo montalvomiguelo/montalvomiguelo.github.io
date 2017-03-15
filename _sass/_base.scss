@@ -20,12 +20,18 @@ dl, dd, ol, ul, figure {
 body {
   @include display-flexbox();
   @include flex-direction(column);
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size-fallback}/#{$base-line-height-fallback} $base-font-family-fallback;
+  letter-spacing: 0.0185em;
   color: $text-color;
   background-color: $background-color;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+
+  .wf-active & {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    letter-spacing: normal;
+  }
 }
 
 ::-moz-selection {
@@ -41,7 +47,11 @@ body {
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $phi * 1em;
+  margin-bottom: $phi * 1.15em;
+
+  .wf-active & {
+    margin-bottom: $phi * 1em;
+  }
 }
 
 
@@ -64,7 +74,11 @@ figure > img {
 }
 
 figcaption {
-  font-size: $small-font-size;
+  font-size: $small-font-size-fallback;
+
+  .wf-active & {
+    font-size: $small-font-size;
+  }
 }
 
 
@@ -76,7 +90,8 @@ ul, ol {
   margin-left: $spacing-unit;
 }
 
-li {
+li,
+.wf-active li {
   > ul,
   > ol {
     margin-bottom: 0;
@@ -89,10 +104,16 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
+  font-family: $header-font-family-fallback;
   font-weight: $headings-font-weight;
-  line-height: 1.1;
+  line-height: 1.32;
   margin-bottom: .5rem;
+  letter-spacing: normal;
+
+  .wf-active & {
+    font-family: $header-font-family;
+    line-height: 1.1;
+  }
 }
 
 
@@ -120,8 +141,12 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: $gamma-font-size;
+  font-size: $gamma-font-size-fallback;
   font-style: italic;
+
+  .wf-active & {
+    font-size: $gamma-font-size;
+  }
 
   > :last-child {
     margin-bottom: 0;
@@ -138,6 +163,8 @@ code {
   font-size: 15px;
   border-radius: 3px;
   background-color: lighten($text-color, 83.5%);
+  line-height: $base-line-height;
+  letter-spacing: normal;
 }
 
 code {

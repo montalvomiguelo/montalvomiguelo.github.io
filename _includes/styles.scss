@@ -1,9 +1,6 @@
 @charset "utf-8";
 
-// ==========================================================================
-// Global Config
-// ==========================================================================
-
+// Our variables
 $phi: 1.618;
 
 $base-font-family: 'Karla', sans-serif;
@@ -12,13 +9,27 @@ $base-font-size:   16px;
 $base-font-weight: 400;
 $headings-font-weight: 400;
 $base-line-height: 1.5;
+$header-line-height: 1.1;
 
 // http://www.modularscale.com/?16&px&1.2&web&text
-$small-font-size:  $base-font-size * 0.833;
 $alpha-font-size: $base-font-size * 1.728;
 $beta-font-size: $base-font-size * 1.44;
 $gamma-font-size: $base-font-size * 1.2;
+$small-font-size:  $base-font-size * 0.833;
 
+// Fallbacks
+$base-font-size-fallback: 14px;
+$base-line-height-fallback: 1.72;
+
+$base-font-family-fallback: Verdana, Geneva, sans-serif;
+$header-font-family-fallback: "Lucida Console", Monaco, monospace;
+
+$alpha-font-size-fallback: $base-font-size-fallback + 9;
+$beta-font-size-fallback: $base-font-size-fallback + 5;
+$gamma-font-size-fallback: $base-font-size-fallback + 2;
+$small-font-size-fallback: $base-font-size-fallback - 3;
+
+// General
 $spacing-unit:     30px;
 
 $text-color:       #232323;

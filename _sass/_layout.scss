@@ -2,9 +2,13 @@
  * Site header
  */
 .site-header {
-  font-family: $header-font-family;
+  font-family: $header-font-family-fallback;
   text-align: center;
   padding: $spacing-unit 0;
+
+  .wf-active & {
+    font-family: $header-font-family;
+  }
 
   .wrapper {
     @include media-query($post-palm) {
@@ -17,10 +21,15 @@
 }
 
 .site-title {
-  font-size: $base-font-size;
+  font-size: $base-font-size-fallback;
   font-weight: $headings-font-weight;
   margin-bottom: $phi * 1em;
-  line-height: 1.1;
+  line-height: 1.5;
+
+  .wf-active & {
+    font-size: $base-font-size;
+    line-height: 1.1;
+  }
 
   &:before {
     content: "@";
@@ -28,7 +37,10 @@
   }
 
   @include media-query($post-palm) {
-    margin-bottom: 0;
+    &,
+    .wf-active & {
+      margin-bottom: 0;
+    }
   }
 
   a {
@@ -77,10 +89,15 @@
 .site-footer {
   background: $text-color;
   padding: $spacing-unit 0;
-  font-size: $small-font-size;
-  font-family: $header-font-family;
+  font-size: $small-font-size-fallback;
+  font-family: $header-font-family-fallback;
   color: $background-color;
   text-align: center;
+
+  .wf-active & {
+    font-size: $small-font-size;
+    font-family: $header-font-family;
+  }
 
   a {
     color: inherit;
@@ -98,9 +115,13 @@
 }
 
 .page-heading {
-  font-size: $alpha-font-size;
+  font-size: $alpha-font-size-fallback;
   margin: $spacing-unit * 2 0 $spacing-unit * $phi;
   text-align: center;
+
+  .wf-active & {
+    font-size: $alpha-font-size;
+  }
 
   @include media-query($post-palm) {
     margin-top: $spacing-unit * 3;
@@ -217,8 +238,12 @@
 }
 
 .post-meta {
-  font-size: $small-font-size;
+  font-size: $small-font-size-fallback;
   color: $grey-color;
+
+  .wf-active & {
+    font-size: $small-font-size;
+  }
 }
 
 .post-link {
@@ -236,12 +261,17 @@
   }
 
   h2 {
-    font-size: $gamma-font-size;
+    font-size: $gamma-font-size-fallback;
+
+    .wf-active & {
+      font-size: $gamma-font-size;
+    }
   }
 
   .post-meta {
-    padding-bottom: 1em;
+    padding-bottom: 1.25em;
     position: relative;
+
     &:before {
       background: $grey-color-light;
       bottom: 0;
@@ -251,6 +281,10 @@
       left: 0;
       position: absolute;
       width: $phi * $base-font-size;
+    }
+
+    .wf-active & {
+      padding-bottom: 1em;
     }
   }
 
@@ -285,24 +319,41 @@
 }
 
 .post-title {
-  font-size: $alpha-font-size;
-  line-height: 1;
-  margin-bottom: $spacing-unit / 6;
+  font-size: $alpha-font-size-fallback;
+  margin-bottom: 2px;
+
+  .wf-active & {
+    font-size: $alpha-font-size;
+    line-height: 1;
+    margin-bottom: $spacing-unit / 6;
+  }
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
 
   h2 {
-    font-size: $beta-font-size;
+    font-size: $beta-font-size-fallback;
+
+    .wf-active & {
+      font-size: $beta-font-size;
+    }
   }
 
   h3 {
-    font-size: $gamma-font-size;
+    font-size: $gamma-font-size-fallback;
+
+    .wf-active & {
+      font-size: $gamma-font-size;
+    }
   }
 
   h4 {
-    font-size: $base-font-size;
+    font-size: $base-font-size-fallback;
+
+    .wf-active & {
+      font-size: $base-font-size;
+    }
   }
 }
 
@@ -312,9 +363,13 @@
  * Portfolio
  */
 .portfolio-list {
-  font-family: $header-font-family;
+  font-family: $header-font-family-fallback;
   list-style: none;
   margin-left: -$spacing-unit / 2;
+
+  .wf-active & {
+    font-family: $header-font-family;
+  }
 
   @include media-query($post-palm) {
     @include display-flexbox();
@@ -335,8 +390,12 @@
 
     span {
       display: block;
-      font-size: $small-font-size;
+      font-size: $small-font-size-fallback;
       margin-top: 1rem;
+
+      .wf-active & {
+        font-size: $small-font-size;
+      }
     }
   }
 }
