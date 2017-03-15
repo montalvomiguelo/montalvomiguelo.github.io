@@ -23,7 +23,6 @@ defaults:
     values:
       author: Montalvo Miguelo
       layout: "post"
-      comments: true
   -
     scope:
       path: ""
@@ -35,5 +34,5 @@ defaults:
 collections:
   - projects
 
-# Enable pagination
-#paginate: 10
+disqus:
+  shortname: montalvomiguelo
