@@ -31,11 +31,6 @@
     line-height: 1.1;
   }
 
-  &:before {
-    content: "@";
-    color: $brand-color;
-  }
-
   @include media-query($post-small) {
     &,
     .wf-active & {
@@ -45,6 +40,11 @@
 
   a {
     color: $text-color;
+
+    &:before {
+      content: "@";
+      color: $brand-color;
+    }
   }
 }
 
