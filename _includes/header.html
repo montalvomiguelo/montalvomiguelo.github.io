@@ -7,15 +7,15 @@
 
   <div class="wrapper">
 
-    {% capture site_title %}{{ site.title | remove: ' ' | downcase }}{% endcapture %}
     {% if page.title %}
-      <p class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site_title }}</a></p>
+      <p class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site.title }}</a></p>
     {% else %}
-      <h1 class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site_title }}</a></h1>
+      <h1 class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site.title }}</a></h1>
     {% endif %}
 
     <nav class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <a class="site-nav__link{% if page.url == "/" %}--active{% endif %}" href="{{ site.baseurl }}/" itemprop="url">Home</a>
+      {% assign site_baseurl = site.baseurl | append: '/' %}
+      <a class="site-nav__link{% if page.url ==  site_baseurl %}--active{% endif %}" href="{{ site.baseurl }}/" itemprop="url">Home</a>
       {% for my_page in site.pages %}
         {% if my_page.title %}
           <a class="site-nav__link{% if page.url == my_page.url %}--active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}" itemprop="url">{{ my_page.title }}</a>
