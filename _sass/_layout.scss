@@ -69,7 +69,7 @@
   @include element(link) {
     @extend %site-nav__link;
 
-    @include modifier(active) {
+    @include modifier(current) {
       @extend %site-nav__link;
       color: $text-color;
     }
