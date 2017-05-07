@@ -3,9 +3,9 @@ title: Acerca
 permalink: /acerca/
 ---
 
-Mi nombre es Montalvo Miguelo y he estado en línea desde hace más de cinco años
-creando páginas web como desarrollador independiente para amigos y agencias
-alrededor del mundo.
+Mi nombre es Montalvo Miguelo soy de Pachuca Hidalgo México y he estado en línea
+desde hace más de cinco años creando páginas web como desarrollador independiente
+para amigos y agencias alrededor del mundo.
 
 Los primeros cuatro años trabajé con plataformas WordPress haciendo temas y
 plugins a medida. Actualmente me encuentro trabajando con la plataforma
