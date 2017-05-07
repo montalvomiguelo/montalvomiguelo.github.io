@@ -1,8 +1,8 @@
 # Site settings
 title: Montalvo Miguelo
 email: me@montalvomiguelo.com
-tagline: Web developer and musician
-description: I am a web developer in Mexico, building things for the internet.
+tagline: Desarrollador Web en México creando cosas para internet
+description: Soy un desarrollador Web en México creando cosas para internet.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://montalvomiguelo.com" # the base hostname & protocol for your site
 twitter_username: montalvomiguelo
@@ -38,3 +38,5 @@ disqus:
   shortname: montalvomiguelo
 
 google_analytics: UA-70263908-1
+
+lang: es

@@ -10,7 +10,7 @@
     {% endif %}
 
     <nav class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <a class="site-nav__link{% if page.url ==  site_baseurl %}--current{% endif %}" href="{{ site.baseurl }}/" itemprop="url">Home</a>
+      <a class="site-nav__link{% if page.url ==  site_baseurl %}--current{% endif %}" href="{{ site.baseurl }}/" itemprop="url">Inicio</a>
       {% for my_page in site.pages %}
         {% if my_page.title %}
           <a class="site-nav__link{% if page.url == my_page.url %}--current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}" itemprop="url">{{ my_page.title }}</a>
