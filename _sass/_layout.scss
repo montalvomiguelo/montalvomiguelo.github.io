@@ -3,21 +3,15 @@
  */
 .site-header {
   font-family: $header-font-family-fallback;
-  text-align: center;
-  padding: $spacing-unit 0;
+  padding: 1em 0;
 
   .wf-active & {
     font-family: $header-font-family;
   }
 
   .wrapper {
-    @include media-query($post-small) {
-      @include display-flexbox();
-      @include align-items(baseline);
-      @include justify-content(space-between);
-    }
+    max-width: none;
   }
-
 }
 
 .site-title {
@@ -51,20 +45,21 @@
     color: $text-color;
   }
 
-  padding-left: $phi * .5em;
-  padding-right: $phi * .5em;
-
-  &:last-child {
-    @include media-query($post-small) {
-      padding-right: 0;
-    }
-  }
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .site-nav {
   @include display-flexbox();
-  @include justify-content(center);
+  @include justify-content(flex-end);
   @include flex-wrap(wrap);
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+
+  @include media-query($post-medium) {
+    @include flex-direction(column);
+    @include align-items(flex-end);
+  }
 
   @include element(link) {
     @extend %site-nav__link;

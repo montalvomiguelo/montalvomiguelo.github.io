@@ -1,19 +1,14 @@
-{% assign site_baseurl = site.baseurl | append: '/' %}
-
 <header class="site-header">
 
   <div class="wrapper">
-    {% if page.title %}
-      <p class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site.title }}</a></p>
-    {% else %}
-      <h1 class="site-title" itemscope itemtype="http://schema.org/Organization"><a href="{{ site.baseurl }}/" itemprop="url">{{ site.title }}</a></h1>
-    {% endif %}
 
-    <nav class="site-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <a class="site-nav__link{% if page.url ==  site_baseurl %}--current{% endif %}" href="{{ site.baseurl }}/" itemprop="url">Inicio</a>
+    <nav class="site-nav">
+      {% if page.title %}
+        <a class="site-nav__link" href="{{ site.baseurl }}/">Inicio</a>
+      {% endif %}
       {% for my_page in site.pages %}
         {% if my_page.title %}
-          <a class="site-nav__link{% if page.url == my_page.url %}--current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}" itemprop="url">{{ my_page.title }}</a>
+          <a class="site-nav__link{% if page.url == my_page.url %}--current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {% endif %}
       {% endfor %}
     </nav>
