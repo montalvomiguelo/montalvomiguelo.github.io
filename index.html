@@ -4,24 +4,29 @@ layout: default
 
 <div class="home">
 
-  <h3 class="site-description">{{ site.description }}</h3>
+  <h1 class="site-title">{{ site.title }}</h1>
 
-  <ul class="post-list" itemscope itemtype="http://schema.org/Blog">
-    {% comment %}
-      Loop through site posts
-      `is_reverse_row_post`, `five_row_index_post`, `posts_size`, and `divisible_by_five` are
-      all used by '_includes/post-list.html'
-    {% endcomment %}
-    {% assign is_reverse_row_post = false %}
-    {% assign five_row_index_post = 1 %}
-    {% assign posts_size = site.posts.size %}
-    {% assign divisible_by_five = posts_size | modulo:5 %}
+  <p class="site-description">{{ site.description }}</p>
 
+  <ul class="post-list">
     {% for post in site.posts %}
-      {% include post-list.html %}
+      <li>
+        <span class="post-meta">
+          {% if post.tags.size > 0 %}
+            {% for tag in post.tags %}
+            {{ tag }}{% if forloop.last %} - {% else %}, {% endif %}
+            {% endfor %}
+          {% endif %}
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
+
+        <h3>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+      </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">suscribir <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

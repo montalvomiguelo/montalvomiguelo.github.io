@@ -3,39 +3,24 @@
  */
 .site-header {
   font-family: $header-font-family-fallback;
-  text-align: center;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit / 2 0;
 
   .wf-active & {
     font-family: $header-font-family;
   }
 
   .wrapper {
-    @include media-query($post-small) {
-      @include display-flexbox();
-      @include align-items(baseline);
-      @include justify-content(space-between);
-    }
+    max-width: none;
   }
-
 }
 
 .site-title {
-  font-size: $base-font-size-fallback;
+  font-size: $alpha-font-size-fallback;
   font-weight: $header-font-weight;
-  margin-bottom: $phi * 1em;
-  line-height: 1.5;
+  margin-bottom: 5px;
 
   .wf-active & {
-    font-size: $base-font-size;
-    line-height: 1.1;
-  }
-
-  @include media-query($post-small) {
-    &,
-    .wf-active & {
-      margin-bottom: 0;
-    }
+    font-size: $alpha-font-size;
   }
 
   a {
@@ -51,20 +36,21 @@
     color: $text-color;
   }
 
-  padding-left: $phi * .5em;
-  padding-right: $phi * .5em;
-
-  &:last-child {
-    @include media-query($post-small) {
-      padding-right: 0;
-    }
-  }
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .site-nav {
   @include display-flexbox();
-  @include justify-content(center);
+  @include justify-content(flex-end);
   @include flex-wrap(wrap);
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+
+  @include media-query($post-medium) {
+    @include flex-direction(column);
+    @include align-items(flex-end);
+  }
 
   @include element(link) {
     @extend %site-nav__link;
@@ -111,125 +97,15 @@
 
 .page-heading {
   font-size: $alpha-font-size-fallback;
-  margin: $spacing-unit * 2 0 $spacing-unit * $phi;
-  text-align: center;
+  margin: 0 0 $spacing-unit * 1.5;
 
   .wf-active & {
     font-size: $alpha-font-size;
   }
-
-  @include media-query($post-small) {
-    margin-top: $spacing-unit * 3;
-  }
 }
 
 .site-description {
-  @extend .page-heading;
-  max-width: $content-width / $phi;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: $spacing-unit * 3;
-
-  @include media-query($post-small) {
-    margin-bottom: $spacing-unit * 4;
-  }
-}
-
-%post-list {
-  margin-left: 0;
-  list-style: none;
-}
-
-.post-list {
-  @extend %post-list;
-
-  @include media-query($post-small) {
-    @include display-flexbox();
-    @include flex-wrap(wrap);
-    margin-left: -$spacing-unit / 2;
-  }
-
-  @include element(row) {
-
-    @include media-query($post-small) {
-      padding-left: $spacing-unit / 2;
-      width: 50%;
-
-      .post-list__item {
-        width: 100%;
-      }
-    }
-
-    @include media-query($post-medium) {
-      @include display-flexbox();
-      padding-left: 0;
-      width: 100%;
-    }
-  }
-
-  @include element(item) {
-    @include display-flexbox();
-    margin-bottom: $spacing-unit / 2;
-    min-height: $spacing-unit / 2 * 11;
-
-    @include media-query($post-small) {
-      padding-left: $spacing-unit / 2;
-      width: 50%;
-    }
-
-    @include media-query($post-medium) {
-      width: 33.33%;
-    }
-  }
-
-  @include modifier(primary) {
-    @extend %post-list;
-
-    @include media-query($post-small) {
-      margin-left: -$spacing-unit / 2;
-    }
-
-    @include media-query($post-medium) {
-      @include flex(1);
-      @include display-flexbox();
-      padding-left: $spacing-unit / 2;
-    }
-
-    .post-link {
-      color: white;
-
-      .post-meta {
-        color: inherit;
-        &:before {
-          background: white;
-        }
-      }
-    }
-  }
-
-  @include modifier(secondary) {
-    @extend %post-list;
-
-    @include media-query($post-small) {
-      margin-left: -$spacing-unit / 2;
-    }
-
-    @include media-query($post-medium) {
-      padding-left: $spacing-unit / 2;
-      @include flex(2);
-    }
-
-    @include media-query($post-medium) {
-      @include display-flexbox();
-      @include flex-wrap(wrap);
-
-      .post-list__item {
-        width: 50%;
-      }
-    }
-
-  }
-
+  color: $grey-color;
 }
 
 .post-meta {
@@ -241,58 +117,21 @@
   }
 }
 
-.post-link {
-  @include flex-grow(1);
-  background: lighten($text-color, 84.5%);
-  padding: $spacing-unit / 2 $spacing-unit / 2 $spacing-unit * $phi;
+.post-list {
+  margin-left: 0;
+  margin-top: $spacing-unit * 1.5;
+  list-style: none;
 
-  &:hover {
-    text-decoration: none;
-
-    h2 {
-      text-decoration: underline;
-    }
-
+  > li {
+    margin-bottom: $spacing-unit;
   }
-
-  h2 {
-    font-size: $gamma-font-size-fallback;
-
-    .wf-active & {
-      font-size: $gamma-font-size;
-    }
-  }
-
-  .post-meta {
-    padding-bottom: 1.25em;
-    position: relative;
-
-    &:before {
-      background: $grey-color-light;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 0;
-      position: absolute;
-      width: $phi * $base-font-size;
-    }
-
-    .wf-active & {
-      padding-bottom: 1em;
-    }
-  }
-
 }
 
-.pagination {
-  @include display-flexbox();
-  @include justify-content(center);
-  margin: $spacing-unit 0;
+.post-link {
+  font-size: $gamma-font-size-fallback;
 
-  span,
-  a {
-    padding: .5em;
+  .wf-active & {
+    font-size: $gamma-font-size;
   }
 }
 
@@ -302,15 +141,8 @@
  * Posts
  */
 .post-header {
-  margin: $spacing-unit * 2 0 $spacing-unit * $phi;
-  text-align: center;
+  margin: 0 0 $spacing-unit * 1.5;
   max-width: $content-width / $phi;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media-query($post-small) {
-    margin-top: $spacing-unit * 3;
-  }
 }
 
 .post-title {
@@ -383,11 +215,15 @@
       width: 33.33%;
     }
 
+    a {
+      color: $grey-color;
+      display: block;
+    }
+
     span {
       display: block;
       font-size: $small-font-size-fallback;
       margin-top: 1rem;
-      text-align: center;
 
       .wf-active & {
         font-size: $small-font-size;

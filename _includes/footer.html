@@ -1,16 +1,16 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-    <span itemscope itemtype="http://schema.org/Organization">
+    <span>
       &copy; {{ 'now' | date: '%Y' }} {{ site.title }}
       {% if site.github_username %}
-        - <a href="https://github.com/{{ site.github_username }}" itemprop="sameAs">Github</a>
+        - <a href="https://github.com/{{ site.github_username }}">Github</a>
       {% endif %}
       {% if site.twitter_username %}
-        - <a href="https://twitter.com/{{ site.twitter_username }}" itemprop="sameAs">Twitter</a>
+        - <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
       {% endif %}
       {% if site.email %}
-        - <a href="mailto:{{ site.email }}" itemprop="sameAs">{{ site.email }}</a>
+        - <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       {% endif %}
     </span>
   </div>
