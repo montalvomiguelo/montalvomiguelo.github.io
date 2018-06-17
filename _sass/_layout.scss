@@ -215,11 +215,15 @@
       width: 33.33%;
     }
 
+    a {
+      color: $grey-color;
+      display: block;
+    }
+
     span {
       display: block;
       font-size: $small-font-size-fallback;
       margin-top: 1rem;
-      text-align: center;
 
       .wf-active & {
         font-size: $small-font-size;
