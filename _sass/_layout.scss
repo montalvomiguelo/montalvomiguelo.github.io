@@ -3,7 +3,7 @@
  */
 .site-header {
   font-family: $header-font-family-fallback;
-  padding: 1em 0;
+  padding: $spacing-unit / 2 0;
 
   .wf-active & {
     font-family: $header-font-family;
@@ -15,21 +15,11 @@
 }
 
 .site-title {
-  font-size: $base-font-size-fallback;
+  font-size: $alpha-font-size-fallback;
   font-weight: $header-font-weight;
-  margin-bottom: $phi * 1em;
-  line-height: 1.5;
 
   .wf-active & {
-    font-size: $base-font-size;
-    line-height: 1.1;
-  }
-
-  @include media-query($post-small) {
-    &,
-    .wf-active & {
-      margin-bottom: 0;
-    }
+    font-size: $alpha-font-size;
   }
 
   a {
@@ -106,27 +96,10 @@
 
 .page-heading {
   font-size: $alpha-font-size-fallback;
-  margin: $spacing-unit * 2 0 $spacing-unit * $phi;
-  text-align: center;
+  margin: 0 0 $spacing-unit * 1.5;
 
   .wf-active & {
     font-size: $alpha-font-size;
-  }
-
-  @include media-query($post-small) {
-    margin-top: $spacing-unit * 3;
-  }
-}
-
-.site-description {
-  @extend .page-heading;
-  max-width: $content-width / $phi;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: $spacing-unit * 3;
-
-  @include media-query($post-small) {
-    margin-bottom: $spacing-unit * 4;
   }
 }
 
@@ -141,6 +114,7 @@
 
 .post-list {
   margin-left: 0;
+  margin-top: $spacing-unit * 1.5;
   list-style: none;
 
   > li {
@@ -162,15 +136,8 @@
  * Posts
  */
 .post-header {
-  margin: $spacing-unit * 2 0 $spacing-unit * $phi;
-  text-align: center;
+  margin: 0 0 $spacing-unit * 1.5;
   max-width: $content-width / $phi;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media-query($post-small) {
-    margin-top: $spacing-unit * 3;
-  }
 }
 
 .post-title {
