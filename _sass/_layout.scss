@@ -17,6 +17,7 @@
 .site-title {
   font-size: $alpha-font-size-fallback;
   font-weight: $header-font-weight;
+  margin-bottom: 5px;
 
   .wf-active & {
     font-size: $alpha-font-size;
@@ -101,6 +102,10 @@
   .wf-active & {
     font-size: $alpha-font-size;
   }
+}
+
+.site-description {
+  color: $grey-color;
 }
 
 .post-meta {
