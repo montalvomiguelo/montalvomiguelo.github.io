@@ -162,9 +162,7 @@ pre,
 code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: lighten($text-color, 83.5%);
-  line-height: $base-line-height;
-  letter-spacing: normal;
+  background-color: $code-background;
 }
 
 code {
