@@ -1,5 +1,5 @@
 ---
-title:  "Introducción a GrqphQL"
+title:  "Introducción a GraphQL"
 categories: blog
 tags: JavaScript
 ---
