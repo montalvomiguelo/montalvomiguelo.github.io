@@ -29,11 +29,11 @@
 }
 
 %site-nav__link {
-  color: $grey-color-dark;
+  color: $text-color;
 
   &:hover,
   &:focus {
-    color: $text-color;
+    color: $brand-color;
   }
 
   padding-left: 0.5em;
@@ -57,7 +57,6 @@
 
     @include modifier(current) {
       @extend %site-nav__link;
-      color: $text-color;
     }
   }
 }
