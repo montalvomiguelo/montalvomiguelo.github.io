@@ -5,10 +5,6 @@
   font-family: $header-font-family;
   padding: $spacing-unit / 2 0;
 
-  .wf-active & {
-    font-family: $header-font-family;
-  }
-
   .wrapper {
     max-width: none;
   }
@@ -18,10 +14,6 @@
   font-size: $alpha-font-size;
   font-weight: $header-font-weight;
   margin-bottom: 5px;
-
-  .wf-active & {
-    font-size: $alpha-font-size;
-  }
 
   a {
     color: $text-color;
@@ -68,11 +60,6 @@
   font-family: $header-font-family;
   color: $background-color;
 
-  .wf-active & {
-    font-size: $small-font-size;
-    font-family: $header-font-family;
-  }
-
   a {
     color: inherit;
   }
@@ -91,10 +78,6 @@
 .page-heading {
   font-size: $alpha-font-size;
   margin: 0 0 $spacing-unit * 1.5;
-
-  .wf-active & {
-    font-size: $alpha-font-size;
-  }
 }
 
 .site-description {
@@ -104,10 +87,6 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
-
-  .wf-active & {
-    font-size: $small-font-size;
-  }
 }
 
 .post-list {
@@ -122,10 +101,6 @@
 
 .post-link {
   font-size: $gamma-font-size;
-
-  .wf-active & {
-    font-size: $gamma-font-size;
-  }
 }
 
 
@@ -139,13 +114,8 @@
 
 .post-title {
   font-size: $alpha-font-size;
-  margin-bottom: 2px;
-
-  .wf-active & {
-    font-size: $alpha-font-size;
-    line-height: 1;
-    margin-bottom: $spacing-unit / 6;
-  }
+  margin-bottom: $spacing-unit / 6;
+  line-height: 1;
 }
 
 .post-content {
@@ -153,26 +123,14 @@
 
   h2 {
     font-size: $beta-font-size;
-
-    .wf-active & {
-      font-size: $beta-font-size;
-    }
   }
 
   h3 {
     font-size: $gamma-font-size;
-
-    .wf-active & {
-      font-size: $gamma-font-size;
-    }
   }
 
   h4 {
     font-size: $base-font-size;
-
-    .wf-active & {
-      font-size: $base-font-size;
-    }
   }
 }
 
@@ -185,10 +143,6 @@
   font-family: $header-font-family;
   list-style: none;
   margin-left: -$spacing-unit / 2;
-
-  .wf-active & {
-    font-family: $header-font-family;
-  }
 
   @include media-query($post-small) {
     @include display-flexbox();
@@ -216,10 +170,6 @@
       display: block;
       font-size: $small-font-size;
       margin-top: 1rem;
-
-      .wf-active & {
-        font-size: $small-font-size;
-      }
     }
   }
 }
