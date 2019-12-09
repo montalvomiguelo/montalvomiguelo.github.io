@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-  font-family: $header-font-family;
   padding: $spacing-unit / 2 0;
 
   .wrapper {
@@ -57,7 +56,6 @@
   background: $text-color;
   padding: $spacing-unit 0;
   font-size: $small-font-size;
-  font-family: $header-font-family;
   color: $background-color;
 
   a {
