@@ -3,8 +3,8 @@
 // Our variables
 $phi: 1.618;
 
-$base-font-family: 'Karla', sans-serif;
-$header-font-family: 'Inconsolata', monospace;
+$base-font-family: 'Lato', sans-serif;
+$header-font-family: 'Lusitana', serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $header-font-weight: 400;
@@ -16,18 +16,6 @@ $alpha-font-size: $base-font-size * 1.728;
 $beta-font-size: $base-font-size * 1.44;
 $gamma-font-size: $base-font-size * 1.2;
 $small-font-size:  $base-font-size * 0.833;
-
-// Fallbacks
-$base-font-size-fallback: 14px;
-$base-line-height-fallback: 1.72;
-
-$base-font-family-fallback: Verdana, Geneva, sans-serif;
-$header-font-family-fallback: "Lucida Console", Monaco, monospace;
-
-$alpha-font-size-fallback: $base-font-size-fallback + 9;
-$beta-font-size-fallback: $base-font-size-fallback + 5;
-$gamma-font-size-fallback: $base-font-size-fallback + 2;
-$small-font-size-fallback: $base-font-size-fallback - 3;
 
 // General
 $spacing-unit:     30px;

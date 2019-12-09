@@ -20,7 +20,7 @@ dl, dd, ol, ul, figure {
 body {
   @include display-flexbox();
   @include flex-direction(column);
-  font: $base-font-weight #{$base-font-size-fallback}/#{$base-line-height-fallback} $base-font-family-fallback;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   letter-spacing: 0.0185em;
   color: $text-color;
   background-color: $background-color;
@@ -74,7 +74,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: $small-font-size-fallback;
+  font-size: $small-font-size;
 
   .wf-active & {
     font-size: $small-font-size;
@@ -104,7 +104,7 @@ li,
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family-fallback;
+  font-family: $header-font-family;
   font-weight: $header-font-weight;
   line-height: 1.32;
   margin-bottom: .5rem;
@@ -141,7 +141,7 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  font-size: $gamma-font-size-fallback;
+  font-size: $gamma-font-size;
   font-style: italic;
 
   .wf-active & {

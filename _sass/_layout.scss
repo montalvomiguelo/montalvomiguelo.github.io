@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  font-family: $header-font-family-fallback;
+  font-family: $header-font-family;
   padding: $spacing-unit / 2 0;
 
   .wf-active & {
@@ -15,7 +15,7 @@
 }
 
 .site-title {
-  font-size: $alpha-font-size-fallback;
+  font-size: $alpha-font-size;
   font-weight: $header-font-weight;
   margin-bottom: 5px;
 
@@ -64,8 +64,8 @@
 .site-footer {
   background: $text-color;
   padding: $spacing-unit 0;
-  font-size: $small-font-size-fallback;
-  font-family: $header-font-family-fallback;
+  font-size: $small-font-size;
+  font-family: $header-font-family;
   color: $background-color;
 
   .wf-active & {
@@ -89,7 +89,7 @@
 }
 
 .page-heading {
-  font-size: $alpha-font-size-fallback;
+  font-size: $alpha-font-size;
   margin: 0 0 $spacing-unit * 1.5;
 
   .wf-active & {
@@ -102,7 +102,7 @@
 }
 
 .post-meta {
-  font-size: $small-font-size-fallback;
+  font-size: $small-font-size;
   color: $grey-color;
 
   .wf-active & {
@@ -121,7 +121,7 @@
 }
 
 .post-link {
-  font-size: $gamma-font-size-fallback;
+  font-size: $gamma-font-size;
 
   .wf-active & {
     font-size: $gamma-font-size;
@@ -138,7 +138,7 @@
 }
 
 .post-title {
-  font-size: $alpha-font-size-fallback;
+  font-size: $alpha-font-size;
   margin-bottom: 2px;
 
   .wf-active & {
@@ -152,7 +152,7 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    font-size: $beta-font-size-fallback;
+    font-size: $beta-font-size;
 
     .wf-active & {
       font-size: $beta-font-size;
@@ -160,7 +160,7 @@
   }
 
   h3 {
-    font-size: $gamma-font-size-fallback;
+    font-size: $gamma-font-size;
 
     .wf-active & {
       font-size: $gamma-font-size;
@@ -168,7 +168,7 @@
   }
 
   h4 {
-    font-size: $base-font-size-fallback;
+    font-size: $base-font-size;
 
     .wf-active & {
       font-size: $base-font-size;
@@ -182,7 +182,7 @@
  * Portfolio
  */
 .portfolio-list {
-  font-family: $header-font-family-fallback;
+  font-family: $header-font-family;
   list-style: none;
   margin-left: -$spacing-unit / 2;
 
@@ -214,7 +214,7 @@
 
     span {
       display: block;
-      font-size: $small-font-size-fallback;
+      font-size: $small-font-size;
       margin-top: 1rem;
 
       .wf-active & {
