@@ -31,11 +31,6 @@
 %site-nav__link {
   color: $text-color;
 
-  &:hover,
-  &:focus {
-    color: $brand-color;
-  }
-
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
