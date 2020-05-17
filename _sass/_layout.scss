@@ -3,10 +3,6 @@
  */
 .site-header {
   padding: $spacing-unit / 2 0;
-
-  .wrapper {
-    max-width: none;
-  }
 }
 
 .site-title {
@@ -28,21 +24,19 @@
 
 .site-nav {
   @include display-flexbox();
-  @include justify-content(flex-end);
-  @include flex-wrap(wrap);
   margin-left: -0.5em;
   margin-right: -0.5em;
-
-  @include media-query($post-medium) {
-    @include flex-direction(column);
-    @include align-items(flex-end);
-  }
 
   @include element(link) {
     @extend %site-nav__link;
 
-    @include modifier(current) {
+    @include modifier(home) {
       @extend %site-nav__link;
+
+      &:before {
+        content: "\2190";
+        margin-right: 0.25em;
+      }
     }
   }
 }
@@ -80,6 +74,10 @@
 
 .site-description {
   color: $grey-color;
+
+  @include media-query($post-small) {
+    max-width: calc(100% / #{$phi});
+  }
 }
 
 .post-meta {
