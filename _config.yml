@@ -1,8 +1,8 @@
 # Site settings
-title: Montalvo Miguelo
+title: Miguel Montalvo
 email: me@montalvomiguelo.com
-tagline: Fullstack web developer living in Los Angeles, CA
-description: Fullstack web developer living in Los Angeles, CA.
+description: >
+  <p>I am a software engineer at <a href="https://barrelny.com">Barrel</a>, a creative and digital marketing agency based in NY and LA.</p>
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://montalvomiguelo.com" # the base hostname & protocol for your site
 twitter_username: montalvomiguelo
