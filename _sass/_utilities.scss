@@ -33,6 +33,8 @@ Prefixer mixin for generating vendor prefixes:
   }
 }
 
+
+
 // Use media queries like this:
 // @include media-query($small) {
 //     .wrapper {
@@ -112,17 +114,4 @@ Prefixer mixin for generating vendor prefixes:
 @mixin flex-grow($number: 0) {
   @include prefixer(flex-grow, $number, webkit moz spec);
   -ms-flex-positive: $number;
-}
-
-// BEM selectors
-
-@mixin element($element) {
-  &__#{$element} {
-    @content;
-  }
-}
-@mixin modifier($modifier) {
-  &--#{$modifier} {
-    @content;
-  }
 }

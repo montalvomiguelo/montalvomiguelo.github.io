@@ -15,29 +15,12 @@
   }
 }
 
-%site-nav__link {
+.site-nav-link {
   color: $text-color;
 
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-}
-
-.site-nav {
-  @include display-flexbox();
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-
-  @include element(link) {
-    @extend %site-nav__link;
-
-    @include modifier(home) {
-      @extend %site-nav__link;
-
-      &:before {
-        content: "\2190";
-        margin-right: 0.25em;
-      }
-    }
+  &::before {
+    content: "\2190";
+    margin-right: 0.25em;
   }
 }
 
@@ -127,45 +110,5 @@
 
   h4 {
     font-size: $base-font-size;
-  }
-}
-
-
-
-/**
- * Portfolio
- */
-.portfolio-list {
-  font-family: $header-font-family;
-  list-style: none;
-  margin-left: -$spacing-unit / 2;
-
-  @include media-query($post-small) {
-    @include display-flexbox();
-    @include flex-wrap(wrap);
-  }
-
-  @include element(item) {
-    margin-bottom: $spacing-unit;
-    padding-left: $spacing-unit / 2;
-
-    @include media-query($post-small) {
-      width: 50%;
-    }
-
-    @include media-query($post-medium) {
-      width: 33.33%;
-    }
-
-    a {
-      color: $grey-color;
-      display: block;
-    }
-
-    span {
-      display: block;
-      font-size: $small-font-size;
-      margin-top: 1rem;
-    }
   }
 }

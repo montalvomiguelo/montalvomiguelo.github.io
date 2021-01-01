@@ -29,16 +29,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-::-moz-selection {
-  background: $brand-color;
-  color: $background-color;
-}
 
-::selection {
-  background: $brand-color;
-  color: $background-color;
-}
 
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
@@ -174,23 +169,3 @@ pre {
     padding-left: $spacing-unit;
   }
 }
-
-
-
-/**
- * Icons
- */
-.icon {
-
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $grey-color;
-    }
-  }
-}
-

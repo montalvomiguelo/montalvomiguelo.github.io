@@ -2,7 +2,6 @@
 title:  "Esenciales de Flexbox"
 categories: blog
 tags: CSS
-color: "#80b6f2"
 ---
 Flexbox es un conjunto de propiedades CSS que nos ayudan a crear
 layouts de nuestras páginas web de una manera más sencilla y fácil de
