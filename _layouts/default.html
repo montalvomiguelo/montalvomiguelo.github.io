@@ -18,24 +18,6 @@ layout: compress
 
     {% include footer.html %}
 
-    <script type="module">
-      import {getCLS, getFID, getLCP} from 'https://unpkg.com/web-vitals?module';
-
-      function sendToGoogleAnalytics({name, delta, id}) {
-        galite('send', 'event', {
-          eventCategory: 'Web Vitals',
-          eventAction: name,
-          eventLabel: id,
-          eventValue: Math.round(name === 'CLS' ? delta * 1000 : delta),
-          nonInteraction: true,
-          transport: 'beacon'
-        });
-      }
-
-      getCLS(sendToGoogleAnalytics);
-      getFID(sendToGoogleAnalytics);
-      getLCP(sendToGoogleAnalytics);
-    </script>
   </body>
 
 </html>
