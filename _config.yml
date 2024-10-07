@@ -34,7 +34,4 @@ defaults:
 collections:
   - projects
 
-disqus:
-  shortname: montalvomiguelo
-
 lang: es
