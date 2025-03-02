@@ -8,6 +8,7 @@ layout: default
 
   <div class="site-description">{{ site.description }}</div>
 
+  {% comment %}
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -28,5 +29,6 @@ layout: default
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% endcomment %}
 
 </div>

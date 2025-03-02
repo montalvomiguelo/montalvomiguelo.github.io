@@ -1,8 +1,8 @@
 # Site settings
 title: Miguel Montalvo
-email: me@montalvomiguelo.com
+# email: me@montalvomiguelo.com
 description: >
-  <p>I am a software engineer at <a href="https://barrelny.com">Barrel</a>, a creative and digital marketing agency based in NY and LA.</p>
+  <p>I am a senior engineer at <a href="https://meetdomaine.com/">Domaine</a>, the largest independent Shopify design and development partner in the world.</p>
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://montalvomiguelo.com" # the base hostname & protocol for your site
 twitter_username: montalvomiguelo
@@ -34,4 +34,4 @@ defaults:
 collections:
   - projects
 
-lang: es
+lang: en
